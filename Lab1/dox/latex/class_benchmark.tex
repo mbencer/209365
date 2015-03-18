@@ -1,0 +1,387 @@
+\hypertarget{class_benchmark}{
+\section{Dokumentacja klasy Benchmark}
+\label{class_benchmark}\index{Benchmark@{Benchmark}}
+}
+
+
+Klasa \hyperlink{class_benchmark}{Benchmark}.  
+
+
+
+
+{\ttfamily \#include $<$Benchmark.hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_benchmark_a0d31c546243991bb9a740494dce9b2b1}{Benchmark} (unsigned int rozmiar\_\-problemu, double stala)
+\begin{DoxyCompactList}\small\item\em Inicjalizator klasy \hyperlink{class_benchmark}{Benchmark}. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_benchmark_a15630af66f064ee79928ae58f74c87c0}{Tablica} (int i)
+\item 
+float \hyperlink{class_benchmark_a099a0e33f94c72bdc90006cd88bae3d7}{Licz\_\-Srednia} ()
+\item 
+float \hyperlink{class_benchmark_a52f1076c0e71389f8c962380e5354fed}{Czas\_\-Start} ()
+\item 
+float \hyperlink{class_benchmark_a178ddfabb8289612748453ecf0bfd600}{Czas\_\-Stop} ()
+\item 
+void \hyperlink{class_benchmark_a6b8ee09e9e44c458c007d27105463085}{Zapisz\_\-Wyniki} ()
+\item 
+\hyperlink{class_benchmark_a20476e07f09e2b20ed3e9a7f13a570e6}{$\sim$Benchmark} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int $\ast$ \hyperlink{class_benchmark_aef4c89962e86bfe41f406c620e4b6ec6}{wielkosc\_\-problemu}
+\item 
+unsigned int \hyperlink{class_benchmark_a5f29a9983dd88241a17c4a9b2a86e9e1}{Ilosc\_\-Danych}
+\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_benchmark_a105f31cf198d96969b939e7bacaa9354}{Losuj} (int $\ast$tablica\_\-liczb, unsigned int rozmiar)
+\item 
+unsigned int \hyperlink{class_benchmark_aa514b55bb3d7c5eb4c1862dbdbc313b6}{Wczytaj\_\-Dane} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{class_benchmark_af550349e9f512c47bd5f4fd6f0630913}{\_\-tablica\_\-liczb}
+\item 
+float \hyperlink{class_benchmark_a9809e00b248161927de3cbd71fd8d424}{stoper\_\-start}
+\item 
+unsigned int \hyperlink{class_benchmark_ae1cbaa987a9ac13bc40dbe4b84a587b6}{iterator}
+\item 
+unsigned int \hyperlink{class_benchmark_a12925bcca68de983919ebd5d6b9e2b01}{iterator\_\-sredniej}
+\item 
+float $\ast$ \hyperlink{class_benchmark_aa33949783712cd5f501a32b4f497f8e9}{stoper\_\-stop}
+\item 
+float $\ast$ \hyperlink{class_benchmark_a1eea18c08dc325a4723ef0b2084938d6}{srednia\_\-jednego\_\-problemu}
+\item 
+unsigned int \hyperlink{class_benchmark_a30d4c478ec859f45df0ac80ac1a89203}{rozmiar\_\-tablic}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa ta modeluje nam test dla funkcji Składa się z pól: 
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em \_\-tablica\_\-liczb}]-\/ która przechowuje nasze dane ktorymi bedziemy testowali funkcje \item[\mbox{\tt[in]} {\em stoper\_\-start}]-\/ przechowuje poczatek mierzenia czasu \item[\mbox{\tt[in]} {\em iterator}]-\/ sluzy nam do iterowania od 0 do 9 (10 prob) zatrzymania czasu \item[\mbox{\tt[in]} {\em iterator\_\-sredniej}]-\/ sluzy nam do iterowania kolejnego pomiaru sredniej w zaleznosci od ilosci prob \item[\mbox{\tt[in]} {\em stoper\_\-stop}]-\/ przechowuje nam 10 wynikow pomiaru czasu (obliczony wynik jednego pomiaru) \item[\mbox{\tt[in]} {\em srednia\_\-jednego\_\-problemu}]-\/ przechowuje tablice sredniego czasu wykonania pomiarow dla poszczegolnych prob \item[\mbox{\tt[in]} {\em ilosc\_\-problemu}]-\/ przechowuje nam jak duzo prob bedzie wykonywanych \item[\mbox{\tt[in]} {\em Ilosc\_\-Danych}]-\/ ilosc danych na ktorych bedziemy pracowali \item[\mbox{\tt[in]} {\em wielkosc\_\-problemu}]-\/ ilosc pojedynczego problemu(ilosci danych na 1 probe) \end{DoxyParams}
+
+
+Definicja w linii 30 pliku Benchmark.hh.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_benchmark_a0d31c546243991bb9a740494dce9b2b1}{
+\index{Benchmark@{Benchmark}!Benchmark@{Benchmark}}
+\index{Benchmark@{Benchmark}!Benchmark@{Benchmark}}
+\subsubsection[{Benchmark}]{\setlength{\rightskip}{0pt plus 5cm}Benchmark::Benchmark (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ rozmiar\_\-problemu, }
+\item[{double}]{ stala}
+\end{DoxyParamCaption}
+)}}
+\label{class_benchmark_a0d31c546243991bb9a740494dce9b2b1}
+Inicjalizator ten służy do określania początkowych wartości pól klasy oraz wyboru na jakich danych bedziemy pracowali (losowe/wczytane)
+
+Opis argumentów: 
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em rozmiar\_\-problemu}]-\/ ilosc maksymalnej liczby wprowadzanych danych \item[\mbox{\tt[in]} {\em stala}]-\/ stala przez ktora bedziemy mnozyli, aby np.uzyskac wiecej wynikow najlepszy przedzial (1.1-\/10) \end{DoxyParams}
+
+
+Definicja w linii 15 pliku Benchmark.cpp.
+
+
+
+Oto graf wywołań dla tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=376pt]{class_benchmark_a0d31c546243991bb9a740494dce9b2b1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_benchmark_a20476e07f09e2b20ed3e9a7f13a570e6}{
+\index{Benchmark@{Benchmark}!$\sim$Benchmark@{$\sim$Benchmark}}
+\index{$\sim$Benchmark@{$\sim$Benchmark}!Benchmark@{Benchmark}}
+\subsubsection[{$\sim$Benchmark}]{\setlength{\rightskip}{0pt plus 5cm}Benchmark::$\sim$Benchmark (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_benchmark_a20476e07f09e2b20ed3e9a7f13a570e6}
+
+
+Definicja w linii 125 pliku Benchmark.hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_benchmark_a52f1076c0e71389f8c962380e5354fed}{
+\index{Benchmark@{Benchmark}!Czas\_\-Start@{Czas\_\-Start}}
+\index{Czas\_\-Start@{Czas\_\-Start}!Benchmark@{Benchmark}}
+\subsubsection[{Czas\_\-Start}]{\setlength{\rightskip}{0pt plus 5cm}float Benchmark::Czas\_\-Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_benchmark_a52f1076c0e71389f8c962380e5354fed}
+
+
+Definicja w linii 66 pliku Benchmark.cpp.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_benchmark_a52f1076c0e71389f8c962380e5354fed_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_benchmark_a178ddfabb8289612748453ecf0bfd600}{
+\index{Benchmark@{Benchmark}!Czas\_\-Stop@{Czas\_\-Stop}}
+\index{Czas\_\-Stop@{Czas\_\-Stop}!Benchmark@{Benchmark}}
+\subsubsection[{Czas\_\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}float Benchmark::Czas\_\-Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_benchmark_a178ddfabb8289612748453ecf0bfd600}
+
+
+Definicja w linii 73 pliku Benchmark.cpp.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_benchmark_a178ddfabb8289612748453ecf0bfd600_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_benchmark_a099a0e33f94c72bdc90006cd88bae3d7}{
+\index{Benchmark@{Benchmark}!Licz\_\-Srednia@{Licz\_\-Srednia}}
+\index{Licz\_\-Srednia@{Licz\_\-Srednia}!Benchmark@{Benchmark}}
+\subsubsection[{Licz\_\-Srednia}]{\setlength{\rightskip}{0pt plus 5cm}float Benchmark::Licz\_\-Srednia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_benchmark_a099a0e33f94c72bdc90006cd88bae3d7}
+
+
+Definicja w linii 83 pliku Benchmark.cpp.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_benchmark_a099a0e33f94c72bdc90006cd88bae3d7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_benchmark_a105f31cf198d96969b939e7bacaa9354}{
+\index{Benchmark@{Benchmark}!Losuj@{Losuj}}
+\index{Losuj@{Losuj}!Benchmark@{Benchmark}}
+\subsubsection[{Losuj}]{\setlength{\rightskip}{0pt plus 5cm}void Benchmark::Losuj (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ tablica\_\-liczb, }
+\item[{unsigned int}]{ rozmiar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_a105f31cf198d96969b939e7bacaa9354}
+
+
+Definicja w linii 56 pliku Benchmark.cpp.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_benchmark_a105f31cf198d96969b939e7bacaa9354_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_benchmark_a15630af66f064ee79928ae58f74c87c0}{
+\index{Benchmark@{Benchmark}!Tablica@{Tablica}}
+\index{Tablica@{Tablica}!Benchmark@{Benchmark}}
+\subsubsection[{Tablica}]{\setlength{\rightskip}{0pt plus 5cm}double Benchmark::Tablica (
+\begin{DoxyParamCaption}
+\item[{int}]{ i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_benchmark_a15630af66f064ee79928ae58f74c87c0}
+
+
+Definicja w linii 83 pliku Benchmark.hh.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_benchmark_a15630af66f064ee79928ae58f74c87c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_benchmark_aa514b55bb3d7c5eb4c1862dbdbc313b6}{
+\index{Benchmark@{Benchmark}!Wczytaj\_\-Dane@{Wczytaj\_\-Dane}}
+\index{Wczytaj\_\-Dane@{Wczytaj\_\-Dane}!Benchmark@{Benchmark}}
+\subsubsection[{Wczytaj\_\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Benchmark::Wczytaj\_\-Dane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_aa514b55bb3d7c5eb4c1862dbdbc313b6}
+
+
+Definicja w linii 115 pliku Benchmark.cpp.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=376pt]{class_benchmark_aa514b55bb3d7c5eb4c1862dbdbc313b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_benchmark_a6b8ee09e9e44c458c007d27105463085}{
+\index{Benchmark@{Benchmark}!Zapisz\_\-Wyniki@{Zapisz\_\-Wyniki}}
+\index{Zapisz\_\-Wyniki@{Zapisz\_\-Wyniki}!Benchmark@{Benchmark}}
+\subsubsection[{Zapisz\_\-Wyniki}]{\setlength{\rightskip}{0pt plus 5cm}void Benchmark::Zapisz\_\-Wyniki (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_benchmark_a6b8ee09e9e44c458c007d27105463085}
+
+
+Definicja w linii 95 pliku Benchmark.cpp.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_benchmark_a6b8ee09e9e44c458c007d27105463085_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_benchmark_af550349e9f512c47bd5f4fd6f0630913}{
+\index{Benchmark@{Benchmark}!\_\-tablica\_\-liczb@{\_\-tablica\_\-liczb}}
+\index{\_\-tablica\_\-liczb@{\_\-tablica\_\-liczb}!Benchmark@{Benchmark}}
+\subsubsection[{\_\-tablica\_\-liczb}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf Benchmark::\_\-tablica\_\-liczb}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_af550349e9f512c47bd5f4fd6f0630913}
+
+
+Definicja w linii 32 pliku Benchmark.hh.
+
+\hypertarget{class_benchmark_a5f29a9983dd88241a17c4a9b2a86e9e1}{
+\index{Benchmark@{Benchmark}!Ilosc\_\-Danych@{Ilosc\_\-Danych}}
+\index{Ilosc\_\-Danych@{Ilosc\_\-Danych}!Benchmark@{Benchmark}}
+\subsubsection[{Ilosc\_\-Danych}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Benchmark::Ilosc\_\-Danych}}}
+\label{class_benchmark_a5f29a9983dd88241a17c4a9b2a86e9e1}
+
+
+Definicja w linii 74 pliku Benchmark.hh.
+
+\hypertarget{class_benchmark_ae1cbaa987a9ac13bc40dbe4b84a587b6}{
+\index{Benchmark@{Benchmark}!iterator@{iterator}}
+\index{iterator@{iterator}!Benchmark@{Benchmark}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Benchmark::iterator}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_ae1cbaa987a9ac13bc40dbe4b84a587b6}
+
+
+Definicja w linii 34 pliku Benchmark.hh.
+
+\hypertarget{class_benchmark_a12925bcca68de983919ebd5d6b9e2b01}{
+\index{Benchmark@{Benchmark}!iterator\_\-sredniej@{iterator\_\-sredniej}}
+\index{iterator\_\-sredniej@{iterator\_\-sredniej}!Benchmark@{Benchmark}}
+\subsubsection[{iterator\_\-sredniej}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Benchmark::iterator\_\-sredniej}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_a12925bcca68de983919ebd5d6b9e2b01}
+
+
+Definicja w linii 35 pliku Benchmark.hh.
+
+\hypertarget{class_benchmark_a30d4c478ec859f45df0ac80ac1a89203}{
+\index{Benchmark@{Benchmark}!rozmiar\_\-tablic@{rozmiar\_\-tablic}}
+\index{rozmiar\_\-tablic@{rozmiar\_\-tablic}!Benchmark@{Benchmark}}
+\subsubsection[{rozmiar\_\-tablic}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Benchmark::rozmiar\_\-tablic}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_a30d4c478ec859f45df0ac80ac1a89203}
+
+
+Definicja w linii 38 pliku Benchmark.hh.
+
+\hypertarget{class_benchmark_a1eea18c08dc325a4723ef0b2084938d6}{
+\index{Benchmark@{Benchmark}!srednia\_\-jednego\_\-problemu@{srednia\_\-jednego\_\-problemu}}
+\index{srednia\_\-jednego\_\-problemu@{srednia\_\-jednego\_\-problemu}!Benchmark@{Benchmark}}
+\subsubsection[{srednia\_\-jednego\_\-problemu}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf Benchmark::srednia\_\-jednego\_\-problemu}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_a1eea18c08dc325a4723ef0b2084938d6}
+
+
+Definicja w linii 37 pliku Benchmark.hh.
+
+\hypertarget{class_benchmark_a9809e00b248161927de3cbd71fd8d424}{
+\index{Benchmark@{Benchmark}!stoper\_\-start@{stoper\_\-start}}
+\index{stoper\_\-start@{stoper\_\-start}!Benchmark@{Benchmark}}
+\subsubsection[{stoper\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Benchmark::stoper\_\-start}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_a9809e00b248161927de3cbd71fd8d424}
+
+
+Definicja w linii 33 pliku Benchmark.hh.
+
+\hypertarget{class_benchmark_aa33949783712cd5f501a32b4f497f8e9}{
+\index{Benchmark@{Benchmark}!stoper\_\-stop@{stoper\_\-stop}}
+\index{stoper\_\-stop@{stoper\_\-stop}!Benchmark@{Benchmark}}
+\subsubsection[{stoper\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf Benchmark::stoper\_\-stop}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_benchmark_aa33949783712cd5f501a32b4f497f8e9}
+
+
+Definicja w linii 36 pliku Benchmark.hh.
+
+\hypertarget{class_benchmark_aef4c89962e86bfe41f406c620e4b6ec6}{
+\index{Benchmark@{Benchmark}!wielkosc\_\-problemu@{wielkosc\_\-problemu}}
+\index{wielkosc\_\-problemu@{wielkosc\_\-problemu}!Benchmark@{Benchmark}}
+\subsubsection[{wielkosc\_\-problemu}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int$\ast$ {\bf Benchmark::wielkosc\_\-problemu}}}
+\label{class_benchmark_aef4c89962e86bfe41f406c620e4b6ec6}
+
+
+Definicja w linii 73 pliku Benchmark.hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_benchmark_8hh}{Benchmark.hh}\item 
+\hyperlink{_benchmark_8cpp}{Benchmark.cpp}\end{DoxyCompactItemize}

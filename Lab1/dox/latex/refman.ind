@@ -1,0 +1,105 @@
+\begin{theindex}
+
+  \item {$\sim $Benchmark}
+    \subitem {Benchmark}, \hyperpage{9}
+  \item {\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb}
+    \subitem {Benchmark}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Benchmark}, \hyperpage{7}
+    \subitem {$\sim $Benchmark}, \hyperpage{9}
+    \subitem {\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb}, 
+		\hyperpage{12}
+    \subitem {Benchmark}, \hyperpage{8}
+    \subitem {Czas\_\discretionary {-}{}{}Start}, \hyperpage{9}
+    \subitem {Czas\_\discretionary {-}{}{}Stop}, \hyperpage{9}
+    \subitem {Ilosc\_\discretionary {-}{}{}Danych}, \hyperpage{12}
+    \subitem {iterator}, \hyperpage{12}
+    \subitem {iterator\_\discretionary {-}{}{}sredniej}, \hyperpage{12}
+    \subitem {Licz\_\discretionary {-}{}{}Srednia}, \hyperpage{10}
+    \subitem {Losuj}, \hyperpage{10}
+    \subitem {rozmiar\_\discretionary {-}{}{}tablic}, \hyperpage{12}
+    \subitem {srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu}, 
+		\hyperpage{12}
+    \subitem {stoper\_\discretionary {-}{}{}start}, \hyperpage{12}
+    \subitem {stoper\_\discretionary {-}{}{}stop}, \hyperpage{12}
+    \subitem {Tablica}, \hyperpage{10}
+    \subitem {Wczytaj\_\discretionary {-}{}{}Dane}, \hyperpage{11}
+    \subitem {wielkosc\_\discretionary {-}{}{}problemu}, \hyperpage{12}
+    \subitem {Zapisz\_\discretionary {-}{}{}Wyniki}, \hyperpage{11}
+  \item {Benchmark.cpp}, \hyperpage{13}
+  \item {Benchmark.hh}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Czas\_\discretionary {-}{}{}Start}
+    \subitem {Benchmark}, \hyperpage{9}
+  \item {Czas\_\discretionary {-}{}{}Stop}
+    \subitem {Benchmark}, \hyperpage{9}
+
+  \indexspace
+
+  \item {funkcja}
+    \subitem {main.cpp}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Ilosc\_\discretionary {-}{}{}Danych}
+    \subitem {Benchmark}, \hyperpage{12}
+  \item {iterator}
+    \subitem {Benchmark}, \hyperpage{12}
+  \item {iterator\_\discretionary {-}{}{}sredniej}
+    \subitem {Benchmark}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Licz\_\discretionary {-}{}{}Srednia}
+    \subitem {Benchmark}, \hyperpage{10}
+  \item {Losuj}
+    \subitem {Benchmark}, \hyperpage{10}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{16}
+  \item {main.cpp}, \hyperpage{15}
+    \subitem {funkcja}, \hyperpage{16}
+    \subitem {main}, \hyperpage{16}
+    \subitem {STALA}, \hyperpage{16}
+
+  \indexspace
+
+  \item {rozmiar\_\discretionary {-}{}{}tablic}
+    \subitem {Benchmark}, \hyperpage{12}
+
+  \indexspace
+
+  \item {srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu}
+    \subitem {Benchmark}, \hyperpage{12}
+  \item {STALA}
+    \subitem {main.cpp}, \hyperpage{16}
+  \item {stoper\_\discretionary {-}{}{}start}
+    \subitem {Benchmark}, \hyperpage{12}
+  \item {stoper\_\discretionary {-}{}{}stop}
+    \subitem {Benchmark}, \hyperpage{12}
+  \item {strona.dox}, \hyperpage{17}
+
+  \indexspace
+
+  \item {Tablica}
+    \subitem {Benchmark}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Wczytaj\_\discretionary {-}{}{}Dane}
+    \subitem {Benchmark}, \hyperpage{11}
+  \item {wielkosc\_\discretionary {-}{}{}problemu}
+    \subitem {Benchmark}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Zapisz\_\discretionary {-}{}{}Wyniki}
+    \subitem {Benchmark}, \hyperpage{11}
+
+\end{theindex}

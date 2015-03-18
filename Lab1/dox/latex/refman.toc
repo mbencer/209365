@@ -1,0 +1,41 @@
+\contentsline {chapter}{\numberline {1}Program liczacy czas przebiegu funkcji dla roznych danych, w celu zobaczenia zlozonosci obliczeniowej.}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Indeks klas}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lista klas}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Indeks plik\IeC {\'o}w}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lista plik\IeC {\'o}w}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Dokumentacja klas}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dokumentacja klasy Benchmark}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Dokumentacja konstruktora i destruktora}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Benchmark}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}$\sim $Benchmark}{9}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {4.1.3}Dokumentacja funkcji sk\IeC {\l }adowych}{9}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Czas\_\discretionary {-}{}{}Start}{9}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}Czas\_\discretionary {-}{}{}Stop}{9}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}Licz\_\discretionary {-}{}{}Srednia}{10}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.4}Losuj}{10}{subsubsection.4.1.3.4}
+\contentsline {subsubsection}{\numberline {4.1.3.5}Tablica}{11}{subsubsection.4.1.3.5}
+\contentsline {subsubsection}{\numberline {4.1.3.6}Wczytaj\_\discretionary {-}{}{}Dane}{11}{subsubsection.4.1.3.6}
+\contentsline {subsubsection}{\numberline {4.1.3.7}Zapisz\_\discretionary {-}{}{}Wyniki}{11}{subsubsection.4.1.3.7}
+\contentsline {subsection}{\numberline {4.1.4}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{12}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb}{12}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}Ilosc\_\discretionary {-}{}{}Danych}{12}{subsubsection.4.1.4.2}
+\contentsline {subsubsection}{\numberline {4.1.4.3}iterator}{12}{subsubsection.4.1.4.3}
+\contentsline {subsubsection}{\numberline {4.1.4.4}iterator\_\discretionary {-}{}{}sredniej}{12}{subsubsection.4.1.4.4}
+\contentsline {subsubsection}{\numberline {4.1.4.5}rozmiar\_\discretionary {-}{}{}tablic}{12}{subsubsection.4.1.4.5}
+\contentsline {subsubsection}{\numberline {4.1.4.6}srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu}{12}{subsubsection.4.1.4.6}
+\contentsline {subsubsection}{\numberline {4.1.4.7}stoper\_\discretionary {-}{}{}start}{12}{subsubsection.4.1.4.7}
+\contentsline {subsubsection}{\numberline {4.1.4.8}stoper\_\discretionary {-}{}{}stop}{12}{subsubsection.4.1.4.8}
+\contentsline {subsubsection}{\numberline {4.1.4.9}wielkosc\_\discretionary {-}{}{}problemu}{12}{subsubsection.4.1.4.9}
+\contentsline {chapter}{\numberline {5}Dokumentacja plik\IeC {\'o}w}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}Dokumentacja pliku Benchmark.cpp}{13}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{14}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Dokumentacja pliku Benchmark.hh}{14}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{15}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Dokumentacja pliku main.cpp}{15}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Dokumentacja definicji}{16}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}STALA}{16}{subsubsection.5.3.1.1}
+\contentsline {subsection}{\numberline {5.3.2}Dokumentacja funkcji}{16}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}funkcja}{16}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.2}main}{16}{subsubsection.5.3.2.2}
+\contentsline {section}{\numberline {5.4}Dokumentacja pliku strona.dox}{17}{section.5.4}

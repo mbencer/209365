@@ -1,0 +1,14 @@
+/*!
+*\mainpage Program liczacy czas przebiegu funkcji dla roznych danych, w celu zobaczenia zlozonosci obliczeniowej.
+
+\author Lukasz Sak
+\version 1
+
+
+Program jest swojego rodzaju testerem czasu trwania funkcji dla roznej ilosci podanych danych. Jako odpowiedz dostajemy plik z zapapisanym czasem trwania funkcji dla okreslonej liczby danych. Pozniej mozemy te dane przedstawic na wykresie XY i zobaczyc jak zachowuje sie dla coraz wiekszej ilosci danych.
+Program posiada opcje wywolania:
+
+\section Szablon
+Program zawiera szablon "template<typename TYP>", gdzie TYP jest to typ danych na ktorym bedziemy operowali.
+
+*/

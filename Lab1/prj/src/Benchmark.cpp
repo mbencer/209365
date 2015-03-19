@@ -40,7 +40,7 @@ using namespace std;
 	     exit(2);
 	   break;
 	}
-	int rozmiar_tablic = 0;
+	rozmiar_tablic = 0;
   	for(unsigned int i=10; i <= Ilosc_Danych; i*=STALA)
     	    rozmiar_tablic++;
 
@@ -94,7 +94,6 @@ float Benchmark::Licz_Srednia()
 
 void Benchmark::Zapisz_Wyniki()
 {
-
     string nazwa_pliku;
     cout<<"Podaj nazwe pliku do zapisania(bez rozszerzenia): ";
     cin>>nazwa_pliku;

@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "Benchmark.hh"
-#define STALA 5 //wspolczynnik przez ktory bedzie liczona ilosc pomiarow
+#define STALA 10 //wspolczynnik przez ktory bedzie liczona ilosc pomiarow
 // i=10; w kolejnym kroku i*=5, aż do uzyskania mniejszej liczby niz nasza ilosc danych
 
 double funkcja(double x){ int y; y=2*x; return y;} //Funkcja mnozaca nasze dane przez 2
@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-unsigned int WIELKOSC_PROBLEMU = 100000000; //Ilosc naszych danych
+unsigned int WIELKOSC_PROBLEMU = 1000000000; //Ilosc naszych danych
 int iterator = 0;
 
 Benchmark test(WIELKOSC_PROBLEMU, STALA);

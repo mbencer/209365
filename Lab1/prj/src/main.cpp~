@@ -4,7 +4,7 @@
 #define STALA 5 //wspolczynnik przez ktory bedzie liczona ilosc pomiarow
 // i=10; w kolejnym kroku i*=5, aż do uzyskania mniejszej liczby niz nasza ilosc danych
 
-double funkcja(double x){ int y; y=2*x; return y;}
+double funkcja(double x){ int y; y=2*x; return y;} //Funkcja mnozaca nasze dane przez 2
 
 using namespace std;
 

@@ -40,15 +40,14 @@ using namespace std;
 	     exit(2);
 	   break;
 	}
-	int rozmiar_tablic = 0;
+	rozmiar_tablic = 0;
   	for(unsigned int i=10; i <= Ilosc_Danych; i*=STALA)
     	    rozmiar_tablic++;
-
+cout<<"Rozmiar1        "<<rozmiar_tablic<<endl;
 
 	stoper_stop = new float[10]; //czas 10 pomiarow
         wielkosc_problemu = new unsigned int[rozmiar_tablic];
         srednia_jednego_problemu = new float[rozmiar_tablic];
-	ilosc_problemu = rozmiar_tablic;
 	
   }
 
@@ -95,7 +94,7 @@ float Benchmark::Licz_Srednia()
 
 void Benchmark::Zapisz_Wyniki()
 {
-
+cout<<"Rozmiar"<<rozmiar_tablic;
     string nazwa_pliku;
     cout<<"Podaj nazwe pliku do zapisania(bez rozszerzenia): ";
     cin>>nazwa_pliku;
@@ -105,7 +104,7 @@ void Benchmark::Zapisz_Wyniki()
     if( plik.good() == true )
     {  
 	plik<<"Ilosc danych"<<","<<"Czas [s]"<<endl;
-	for (unsigned int i = 0; i < this->ilosc_problemu; ++i)
+	for (unsigned int i = 0; i < this->rozmiar_tablic; ++i)
           plik<< this->wielkosc_problemu[i]<<","<<this->srednia_jednego_problemu[i]<<endl;
 	plik<<endl;
         plik.close();

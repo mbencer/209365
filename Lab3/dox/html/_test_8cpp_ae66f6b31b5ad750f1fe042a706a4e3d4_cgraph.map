@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_benchmark.html#a52f1076c0e71389f8c962380e5354fed" title="Benchmark::Czas_Start" alt="" coords="115,5,277,35"/>
+<area shape="rect" id="node5" href="$class_benchmark.html#a178ddfabb8289612748453ecf0bfd600" title="Benchmark::Czas_Stop" alt="" coords="116,59,276,88"/>
+<area shape="rect" id="node7" href="$class_benchmark.html#a099a0e33f94c72bdc90006cd88bae3d7" title="Benchmark::Licz_Srednia" alt="" coords="111,112,281,141"/>
+<area shape="rect" id="node9" href="$class_kolejka.html#ab1d8e5d4a855fb2156201a57cc0a9a39" title="Kolejka::POP" alt="" coords="145,165,247,195"/>
+<area shape="rect" id="node11" href="$class_kolejka.html#a66056e67a0514466d7771da351e8468b" title="Kolejka::PUSH" alt="" coords="141,219,251,248"/>
+<area shape="rect" id="node13" href="$class_benchmark.html#a15630af66f064ee79928ae58f74c87c0" title="Benchmark::Tablica" alt="" coords="127,272,265,301"/>
+<area shape="rect" id="node15" href="$class_benchmark.html#a6b8ee09e9e44c458c007d27105463085" title="Benchmark::Zapisz_Wyniki" alt="" coords="105,325,287,355"/>
+</map>

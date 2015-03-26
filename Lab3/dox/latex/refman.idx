@@ -1,0 +1,101 @@
+\indexentry{Benchmark@{Benchmark}|hyperpage}{9}
+\indexentry{Benchmark@{Benchmark}!Benchmark@{Benchmark}|hyperpage}{10}
+\indexentry{Benchmark@{Benchmark}!Benchmark@{Benchmark}|hyperpage}{10}
+\indexentry{Benchmark@{Benchmark}!$\sim $Benchmark@{$\sim $Benchmark}|hyperpage}{11}
+\indexentry{$\sim $Benchmark@{$\sim $Benchmark}!Benchmark@{Benchmark}|hyperpage}{11}
+\indexentry{Benchmark@{Benchmark}!Czas\_\discretionary {-}{}{}Start@{Czas\_\discretionary {-}{}{}Start}|hyperpage}{11}
+\indexentry{Czas\_\discretionary {-}{}{}Start@{Czas\_\discretionary {-}{}{}Start}!Benchmark@{Benchmark}|hyperpage}{11}
+\indexentry{Benchmark@{Benchmark}!Czas\_\discretionary {-}{}{}Stop@{Czas\_\discretionary {-}{}{}Stop}|hyperpage}{11}
+\indexentry{Czas\_\discretionary {-}{}{}Stop@{Czas\_\discretionary {-}{}{}Stop}!Benchmark@{Benchmark}|hyperpage}{11}
+\indexentry{Benchmark@{Benchmark}!Licz\_\discretionary {-}{}{}Srednia@{Licz\_\discretionary {-}{}{}Srednia}|hyperpage}{12}
+\indexentry{Licz\_\discretionary {-}{}{}Srednia@{Licz\_\discretionary {-}{}{}Srednia}!Benchmark@{Benchmark}|hyperpage}{12}
+\indexentry{Benchmark@{Benchmark}!Losuj@{Losuj}|hyperpage}{12}
+\indexentry{Losuj@{Losuj}!Benchmark@{Benchmark}|hyperpage}{12}
+\indexentry{Benchmark@{Benchmark}!Tablica@{Tablica}|hyperpage}{12}
+\indexentry{Tablica@{Tablica}!Benchmark@{Benchmark}|hyperpage}{12}
+\indexentry{Benchmark@{Benchmark}!Wczytaj\_\discretionary {-}{}{}Dane@{Wczytaj\_\discretionary {-}{}{}Dane}|hyperpage}{13}
+\indexentry{Wczytaj\_\discretionary {-}{}{}Dane@{Wczytaj\_\discretionary {-}{}{}Dane}!Benchmark@{Benchmark}|hyperpage}{13}
+\indexentry{Benchmark@{Benchmark}!Zapisz\_\discretionary {-}{}{}Wyniki@{Zapisz\_\discretionary {-}{}{}Wyniki}|hyperpage}{13}
+\indexentry{Zapisz\_\discretionary {-}{}{}Wyniki@{Zapisz\_\discretionary {-}{}{}Wyniki}!Benchmark@{Benchmark}|hyperpage}{13}
+\indexentry{Benchmark@{Benchmark}!\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb@{\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb}|hyperpage}{14}
+\indexentry{\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb@{\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Benchmark@{Benchmark}!Ilosc\_\discretionary {-}{}{}Danych@{Ilosc\_\discretionary {-}{}{}Danych}|hyperpage}{14}
+\indexentry{Ilosc\_\discretionary {-}{}{}Danych@{Ilosc\_\discretionary {-}{}{}Danych}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Benchmark@{Benchmark}!iterator@{iterator}|hyperpage}{14}
+\indexentry{iterator@{iterator}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Benchmark@{Benchmark}!iterator\_\discretionary {-}{}{}sredniej@{iterator\_\discretionary {-}{}{}sredniej}|hyperpage}{14}
+\indexentry{iterator\_\discretionary {-}{}{}sredniej@{iterator\_\discretionary {-}{}{}sredniej}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Benchmark@{Benchmark}!rozmiar\_\discretionary {-}{}{}tablic@{rozmiar\_\discretionary {-}{}{}tablic}|hyperpage}{14}
+\indexentry{rozmiar\_\discretionary {-}{}{}tablic@{rozmiar\_\discretionary {-}{}{}tablic}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Benchmark@{Benchmark}!srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu@{srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu}|hyperpage}{14}
+\indexentry{srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu@{srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Benchmark@{Benchmark}!stoper\_\discretionary {-}{}{}start@{stoper\_\discretionary {-}{}{}start}|hyperpage}{14}
+\indexentry{stoper\_\discretionary {-}{}{}start@{stoper\_\discretionary {-}{}{}start}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Benchmark@{Benchmark}!stoper\_\discretionary {-}{}{}stop@{stoper\_\discretionary {-}{}{}stop}|hyperpage}{14}
+\indexentry{stoper\_\discretionary {-}{}{}stop@{stoper\_\discretionary {-}{}{}stop}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Benchmark@{Benchmark}!wielkosc\_\discretionary {-}{}{}problemu@{wielkosc\_\discretionary {-}{}{}problemu}|hyperpage}{14}
+\indexentry{wielkosc\_\discretionary {-}{}{}problemu@{wielkosc\_\discretionary {-}{}{}problemu}!Benchmark@{Benchmark}|hyperpage}{14}
+\indexentry{Kolejka@{Kolejka}|hyperpage}{15}
+\indexentry{Kolejka@{Kolejka}!POP@{POP}|hyperpage}{16}
+\indexentry{POP@{POP}!Kolejka@{Kolejka}|hyperpage}{16}
+\indexentry{Kolejka@{Kolejka}!PUSH@{PUSH}|hyperpage}{16}
+\indexentry{PUSH@{PUSH}!Kolejka@{Kolejka}|hyperpage}{16}
+\indexentry{Kolejka@{Kolejka}!SHOW@{SHOW}|hyperpage}{16}
+\indexentry{SHOW@{SHOW}!Kolejka@{Kolejka}|hyperpage}{16}
+\indexentry{Kolejka@{Kolejka}!SIZE@{SIZE}|hyperpage}{17}
+\indexentry{SIZE@{SIZE}!Kolejka@{Kolejka}|hyperpage}{17}
+\indexentry{Lista@{Lista}|hyperpage}{17}
+\indexentry{Lista@{Lista}!Lista@{Lista}|hyperpage}{18}
+\indexentry{Lista@{Lista}!Lista@{Lista}|hyperpage}{18}
+\indexentry{Lista@{Lista}!$\sim $Lista@{$\sim $Lista}|hyperpage}{18}
+\indexentry{$\sim $Lista@{$\sim $Lista}!Lista@{Lista}|hyperpage}{18}
+\indexentry{Lista@{Lista}!POP@{POP}|hyperpage}{18}
+\indexentry{POP@{POP}!Lista@{Lista}|hyperpage}{18}
+\indexentry{Lista@{Lista}!Powiekszenie\_\discretionary {-}{}{}Pamieci@{Powiekszenie\_\discretionary {-}{}{}Pamieci}|hyperpage}{19}
+\indexentry{Powiekszenie\_\discretionary {-}{}{}Pamieci@{Powiekszenie\_\discretionary {-}{}{}Pamieci}!Lista@{Lista}|hyperpage}{19}
+\indexentry{Lista@{Lista}!PUSH@{PUSH}|hyperpage}{19}
+\indexentry{PUSH@{PUSH}!Lista@{Lista}|hyperpage}{19}
+\indexentry{Lista@{Lista}!Rozmiar@{Rozmiar}|hyperpage}{19}
+\indexentry{Rozmiar@{Rozmiar}!Lista@{Lista}|hyperpage}{19}
+\indexentry{Lista@{Lista}!SHOW@{SHOW}|hyperpage}{20}
+\indexentry{SHOW@{SHOW}!Lista@{Lista}|hyperpage}{20}
+\indexentry{Lista@{Lista}!SIZE@{SIZE}|hyperpage}{20}
+\indexentry{SIZE@{SIZE}!Lista@{Lista}|hyperpage}{20}
+\indexentry{Lista@{Lista}!Zmniejszenie\_\discretionary {-}{}{}Pamieci@{Zmniejszenie\_\discretionary {-}{}{}Pamieci}|hyperpage}{21}
+\indexentry{Zmniejszenie\_\discretionary {-}{}{}Pamieci@{Zmniejszenie\_\discretionary {-}{}{}Pamieci}!Lista@{Lista}|hyperpage}{21}
+\indexentry{Lista@{Lista}!\_\discretionary {-}{}{}rozmiar\_\discretionary {-}{}{}listy@{\_\discretionary {-}{}{}rozmiar\_\discretionary {-}{}{}listy}|hyperpage}{21}
+\indexentry{\_\discretionary {-}{}{}rozmiar\_\discretionary {-}{}{}listy@{\_\discretionary {-}{}{}rozmiar\_\discretionary {-}{}{}listy}!Lista@{Lista}|hyperpage}{21}
+\indexentry{Lista@{Lista}!koniec@{koniec}|hyperpage}{21}
+\indexentry{koniec@{koniec}!Lista@{Lista}|hyperpage}{21}
+\indexentry{Lista@{Lista}!poczatek@{poczatek}|hyperpage}{21}
+\indexentry{poczatek@{poczatek}!Lista@{Lista}|hyperpage}{21}
+\indexentry{Lista@{Lista}!tab@{tab}|hyperpage}{21}
+\indexentry{tab@{tab}!Lista@{Lista}|hyperpage}{21}
+\indexentry{Stos@{Stos}|hyperpage}{22}
+\indexentry{Stos@{Stos}!POP@{POP}|hyperpage}{23}
+\indexentry{POP@{POP}!Stos@{Stos}|hyperpage}{23}
+\indexentry{Stos@{Stos}!PUSH@{PUSH}|hyperpage}{23}
+\indexentry{PUSH@{PUSH}!Stos@{Stos}|hyperpage}{23}
+\indexentry{Stos@{Stos}!SHOW@{SHOW}|hyperpage}{24}
+\indexentry{SHOW@{SHOW}!Stos@{Stos}|hyperpage}{24}
+\indexentry{Stos@{Stos}!SIZE@{SIZE}|hyperpage}{24}
+\indexentry{SIZE@{SIZE}!Stos@{Stos}|hyperpage}{24}
+\indexentry{Benchmark.cpp@{Benchmark.cpp}|hyperpage}{27}
+\indexentry{Benchmark.hh@{Benchmark.hh}|hyperpage}{28}
+\indexentry{Kolejka.hh@{Kolejka.hh}|hyperpage}{29}
+\indexentry{Lista.cpp@{Lista.cpp}|hyperpage}{30}
+\indexentry{Lista.cpp@{Lista.cpp}!main@{main}|hyperpage}{31}
+\indexentry{main@{main}!Lista.cpp@{Lista.cpp}|hyperpage}{31}
+\indexentry{Lista.hh@{Lista.hh}|hyperpage}{32}
+\indexentry{Stos.hh@{Stos.hh}|hyperpage}{33}
+\indexentry{strona.dox@{strona.dox}|hyperpage}{35}
+\indexentry{Struktury.cpp@{Struktury.cpp}|hyperpage}{35}
+\indexentry{Struktury.cpp@{Struktury.cpp}!main@{main}|hyperpage}{36}
+\indexentry{main@{main}!Struktury.cpp@{Struktury.cpp}|hyperpage}{36}
+\indexentry{Test.cpp@{Test.cpp}|hyperpage}{36}
+\indexentry{Test.cpp@{Test.cpp}!STALA@{STALA}|hyperpage}{37}
+\indexentry{STALA@{STALA}!Test.cpp@{Test.cpp}|hyperpage}{37}
+\indexentry{Test.cpp@{Test.cpp}!funkcja@{funkcja}|hyperpage}{37}
+\indexentry{funkcja@{funkcja}!Test.cpp@{Test.cpp}|hyperpage}{37}
+\indexentry{Test.cpp@{Test.cpp}!main@{main}|hyperpage}{37}
+\indexentry{main@{main}!Test.cpp@{Test.cpp}|hyperpage}{37}

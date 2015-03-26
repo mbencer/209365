@@ -1,27 +1,37 @@
-#
-#  To sa opcje dla kompilacji
-#
-CPPFLAGS= -c -g -Iinc -Wall -pedantic
+CC = g++
+#LIBS = -lm
+CFLAGS = -Wall -pedantic -Iinc
+#-std=c99
+OBJ =\
+	obj/main.o \
+	obj/Lista.o
 
-__start__: Benchmark
-	./Benchmark
-
-Benchmark: obj/Test.o obj/Benchmark.o
-	g++ -Wall -pedantic -o Benchmark obj/Test.o obj/Benchmark.o 
-
-obj/Test.o: src/Test.cpp inc/Benchmark.hh inc/Lista.hh inc/Kolejka.hh inc/Stos.hh 
-	g++ ${CPPFLAGS} -o obj/Test.o src/Test.cpp
+INC = \
+	inc/Lista.hh
 
 
-obj/Benchmark.o: src/Benchmark.cpp inc/Benchmark.hh 
-	g++ ${CPPFLAGS} -o obj/Benchmark.o src/Benchmark.cpp
-
-Struktury: obj/Struktury.o
-	g++ -Wall -pedantic -o Struktury obj/Struktury.o 
-
-obj/Struktury.o: src/Struktury.cpp inc/Element.hh inc/Lista.hh inc/Kolejka.hh inc/Stos.hh
-	g++ ${CPPFLAGS} -o obj/Struktury.o src/Struktury.cpp
+all: obj main
 
 
+sam_main:  
+	$(CC) $(CFLAGS) src/main.cpp -o program
+
+start: obj main
+	rm -f *.o obj/*.o; ./program
+
+obj:
+	mkdir obj
 clean:
-	rm -f obj/*.o Struktury Test
+	rm -f *.o program obj/*.o
+
+$(OBJ): obj/%.o : src/%.cpp 
+	$(CC) -c $(CFLAGS) $< -o $@
+
+main: $(OBJ)
+	$(CC) $(OBJ) $(LIBS) -o program
+
+kopia:
+	rm -f src/*.cpp~ inc/*.cpp~
+
+doxy:
+	cd ../dox;  make

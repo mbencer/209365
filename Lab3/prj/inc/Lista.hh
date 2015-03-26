@@ -96,11 +96,11 @@ void Zmniejszenie_Pamieci()
  */
 int POP (int liczba)
 {
-   if (SIZE() == 0) {cout<<"Tablica pusta !!!"<<endl; return 1;}
+   if (SIZE() == 0) {cout<<"Tablica pusta !!!"<<endl; return -1;}
    if(SIZE()*4 <= _rozmiar_listy) Zmniejszenie_Pamieci();
-   if(liczba == 1) {poczatek++; return 0;}
-    else if(liczba == SIZE()) {koniec--; return 0;}
-     else {cout<<"Niepoprawny wybor usuniecia elementu!!!"<<endl; return 2;}
+   if(liczba == 1) {poczatek++; return tab[poczatek-1];}
+    else if(liczba == SIZE()) {koniec--; return tab[koniec+1];}
+     else {cout<<"Niepoprawny wybor usuniecia elementu!!!"<<endl; return -2;}
 }
 /*
  * \brief Metoda SIZE()

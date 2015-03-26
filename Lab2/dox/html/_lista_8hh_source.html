@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Struktury: Plik źródłowy Lista.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>Lista.hh</h1>  </div>
+</div>
+<div class="contents">
+<a href="_lista_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef LISTA_HH</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define LISTA_HH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="_element_8hh.html" title="Definicja klasy Element.">Element.hh</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="keyword">using namespace </span>std;
+<a name="l00006"></a>00006 
+<a name="l00026"></a>00026 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00027"></a><a class="code" href="class_lista.html">00027</a> <span class="keyword">class </span><a class="code" href="class_lista.html" title="Klasa Lista.">Lista</a> 
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029     <span class="keyword">protected</span>:
+<a name="l00030"></a><a class="code" href="class_lista.html#a8557ec530a4dcf731449d708426fe5d5">00030</a>     <a class="code" href="class_element.html" title="Klasa Element.">Element&lt;TYP&gt;</a> *pierwszy;
+<a name="l00031"></a><a class="code" href="class_lista.html#aefe3a0b196bd94713eebe3f9332011b1">00031</a>     <a class="code" href="class_element.html" title="Klasa Element.">Element&lt;TYP&gt;</a> *ostatni;
+<a name="l00032"></a>00032     <span class="keyword">public</span>:
+<a name="l00033"></a><a class="code" href="class_lista.html#ae2559bf0c96569265d5f9f7f9cd4cb3a">00033</a>     <a class="code" href="class_lista.html#ae2559bf0c96569265d5f9f7f9cd4cb3a">Lista</a>(){ pierwszy = NULL; ostatni = NULL;}
+<a name="l00034"></a><a class="code" href="class_lista.html#a7271d867e38a838c25ffb5aa6b73faef">00034</a>     <a class="code" href="class_lista.html#a7271d867e38a838c25ffb5aa6b73faef">~Lista</a>(){ <span class="keyword">delete</span> pierwszy;}
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 <span class="comment">/*</span>
+<a name="l00037"></a>00037 <span class="comment"> * \brief Metoda PUSH()</span>
+<a name="l00038"></a>00038 <span class="comment"> *</span>
+<a name="l00039"></a>00039 <span class="comment"> *  Metoda ta służy do dodawania kolejnego elementu listy, element dodajemy na</span>
+<a name="l00040"></a>00040 <span class="comment"> * koniec listy</span>
+<a name="l00041"></a>00041 <span class="comment"> *</span>
+<a name="l00042"></a>00042 <span class="comment"> * \param[in] liczba - zmienne ktore bedziemy wrzucali typu ktory wybierzemy</span>
+<a name="l00043"></a>00043 <span class="comment"> */</span>
+<a name="l00044"></a><a class="code" href="class_lista.html#a5c21bab22b627c729ad0c90e1f835901">00044</a> <span class="keywordtype">void</span> PUSH (TYP liczba)
+<a name="l00045"></a>00045 {
+<a name="l00046"></a>00046 <a class="code" href="class_element.html" title="Klasa Element.">Element&lt;TYP&gt;</a> *tmp = <span class="keyword">new</span> <a class="code" href="class_element.html" title="Klasa Element.">Element&lt;TYP&gt;</a>;
+<a name="l00047"></a>00047 tmp-&gt;<a class="code" href="class_element.html#a686c632e35d9fe961d0bf5482e1215fd">wartosc</a> = liczba;
+<a name="l00048"></a>00048 <span class="keywordflow">if</span> (ostatni==NULL) pierwszy = tmp; <span class="comment">//ustawianie wkaznika do pierwszego elementu</span>
+<a name="l00049"></a>00049 <span class="keywordflow">else</span> ostatni-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a> = tmp;
+<a name="l00050"></a>00050 ostatni = tmp;
+<a name="l00051"></a>00051 }
+<a name="l00052"></a>00052 <span class="comment">/*</span>
+<a name="l00053"></a>00053 <span class="comment"> * \brief Metoda POP()</span>
+<a name="l00054"></a>00054 <span class="comment"> *</span>
+<a name="l00055"></a>00055 <span class="comment"> *  Metoda ta służy do usuwania wybranego elementu listy</span>
+<a name="l00056"></a>00056 <span class="comment"> * \param[in] Numer_Elementu - numer elementu który chcemy usunac</span>
+<a name="l00057"></a>00057 <span class="comment"> * \return Funkcja zwraca 0 gdy metoda zostala wlasciwie uzyta, wartosc rozna od 0 w przypadku bledu</span>
+<a name="l00058"></a>00058 <span class="comment"> */</span>
+<a name="l00059"></a><a class="code" href="class_lista.html#a99390f363a7deceed9c99d717f578aaa">00059</a> <span class="keywordtype">int</span> POP(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Numer_Elementu)
+<a name="l00060"></a>00060 {
+<a name="l00061"></a>00061    <span class="keywordflow">if</span>(Numer_Elementu &lt;= 0 || Numer_Elementu &gt; SIZE()) {cout&lt;&lt;<span class="stringliteral">&quot;Nie ma elementu o numerze &quot;</span>&lt;&lt; Numer_Elementu&lt;&lt;<span class="stringliteral">&quot;. Byc moze został usuniety wczesniej!!!\n&quot;</span>; <span class="keywordflow">return</span> 1;}
+<a name="l00062"></a>00062    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 1;
+<a name="l00063"></a>00063    <a class="code" href="class_element.html" title="Klasa Element.">Element&lt;TYP&gt;</a> *wsk = pierwszy;
+<a name="l00064"></a>00064    <a class="code" href="class_element.html" title="Klasa Element.">Element&lt;TYP&gt;</a> *usuwany;
+<a name="l00065"></a>00065    <span class="keywordflow">if</span>(Numer_Elementu == 1) { pierwszy = wsk-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a>; <span class="keyword">delete</span> wsk; <span class="keywordflow">return</span> 0;}
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067      <span class="keywordflow">while</span> (wsk != NULL)          
+<a name="l00068"></a>00068        {
+<a name="l00069"></a>00069          <span class="keywordflow">if</span>(i == Numer_Elementu-1)
+<a name="l00070"></a>00070          {
+<a name="l00071"></a>00071            usuwany = wsk-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a>;
+<a name="l00072"></a>00072        wsk-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a> = usuwany-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a>;
+<a name="l00073"></a>00073        <span class="keyword">delete</span> usuwany;
+<a name="l00074"></a>00074        <span class="keywordflow">return</span> 0;
+<a name="l00075"></a>00075          }
+<a name="l00076"></a>00076          wsk = wsk-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a>;
+<a name="l00077"></a>00077          i++;
+<a name="l00078"></a>00078        }
+<a name="l00079"></a>00079 <span class="keywordflow">return</span> 2;
+<a name="l00080"></a>00080 }
+<a name="l00081"></a>00081 <span class="comment">/*</span>
+<a name="l00082"></a>00082 <span class="comment"> * \brief Metoda SIZE()</span>
+<a name="l00083"></a>00083 <span class="comment"> *</span>
+<a name="l00084"></a>00084 <span class="comment"> *  Metoda ta służy do podania nam liczby elementow na liscie</span>
+<a name="l00085"></a>00085 <span class="comment"> *</span>
+<a name="l00086"></a>00086 <span class="comment"> * \return Funkcja zwraca ilosc elementow listy</span>
+<a name="l00087"></a>00087 <span class="comment"> */</span>
+<a name="l00088"></a><a class="code" href="class_lista.html#a4f10ca015c6b34a322dbc1c93e313c07">00088</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> SIZE()
+<a name="l00089"></a>00089 {
+<a name="l00090"></a>00090   <span class="keywordflow">if</span>(pierwszy != NULL)
+<a name="l00091"></a>00091   {
+<a name="l00092"></a>00092     <a class="code" href="class_element.html" title="Klasa Element.">Element&lt;TYP&gt;</a> *wsk = pierwszy;
+<a name="l00093"></a>00093     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 1;
+<a name="l00094"></a>00094     <span class="keywordflow">while</span>( wsk-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a> != NULL )         
+<a name="l00095"></a>00095       {
+<a name="l00096"></a>00096         wsk = wsk-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a>;
+<a name="l00097"></a>00097         i++;
+<a name="l00098"></a>00098       }
+<a name="l00099"></a>00099     <span class="keywordflow">return</span> i;
+<a name="l00100"></a>00100    } <span class="keywordflow">else</span> <span class="keywordflow">return</span> 0; 
+<a name="l00101"></a>00101 }
+<a name="l00102"></a>00102 <span class="comment">/*</span>
+<a name="l00103"></a>00103 <span class="comment"> * \brief Metoda SHOW()</span>
+<a name="l00104"></a>00104 <span class="comment"> *</span>
+<a name="l00105"></a>00105 <span class="comment"> *  Metoda ta służy do wyswietlenia wszystkich elementow listy</span>
+<a name="l00106"></a>00106 <span class="comment"> *</span>
+<a name="l00107"></a>00107 <span class="comment"> */</span>
+<a name="l00108"></a><a class="code" href="class_lista.html#a89bbb449a047593eebce602a449ac1e7">00108</a> <span class="keywordtype">void</span> SHOW()
+<a name="l00109"></a>00109 {
+<a name="l00110"></a>00110    <a class="code" href="class_element.html" title="Klasa Element.">Element&lt;TYP&gt;</a> *wsk = pierwszy;
+<a name="l00111"></a>00111    <span class="keywordflow">while</span>(wsk)         
+<a name="l00112"></a>00112      {
+<a name="l00113"></a>00113      cout &lt;&lt; wsk-&gt;<a class="code" href="class_element.html#a686c632e35d9fe961d0bf5482e1215fd">wartosc</a> &lt;&lt; endl; 
+<a name="l00114"></a>00114      wsk = wsk-&gt;<a class="code" href="class_element.html#a1af602058c187cccf3f50d0c1a21047d">nastepny</a>;
+<a name="l00115"></a>00115      }
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117 }
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119 };
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Thu Mar 26 2015 06:26:58 dla Struktury programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

@@ -1,0 +1,89 @@
+\contentsline {chapter}{\numberline {1}Program tworzacy struktury danych.}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Indeks klas}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Hierarchia klas}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Indeks klas}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lista klas}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Indeks plik\IeC {\'o}w}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Lista plik\IeC {\'o}w}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Dokumentacja klas}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Dokumentacja klasy Benchmark}{9}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{10}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Dokumentacja konstruktora i destruktora}{10}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Benchmark}{10}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}$\sim $Benchmark}{11}{subsubsection.5.1.2.2}
+\contentsline {subsection}{\numberline {5.1.3}Dokumentacja funkcji sk\IeC {\l }adowych}{11}{subsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.3.1}Czas\_\discretionary {-}{}{}Start}{11}{subsubsection.5.1.3.1}
+\contentsline {subsubsection}{\numberline {5.1.3.2}Czas\_\discretionary {-}{}{}Stop}{11}{subsubsection.5.1.3.2}
+\contentsline {subsubsection}{\numberline {5.1.3.3}Licz\_\discretionary {-}{}{}Srednia}{12}{subsubsection.5.1.3.3}
+\contentsline {subsubsection}{\numberline {5.1.3.4}Losuj}{12}{subsubsection.5.1.3.4}
+\contentsline {subsubsection}{\numberline {5.1.3.5}Tablica}{13}{subsubsection.5.1.3.5}
+\contentsline {subsubsection}{\numberline {5.1.3.6}Wczytaj\_\discretionary {-}{}{}Dane}{13}{subsubsection.5.1.3.6}
+\contentsline {subsubsection}{\numberline {5.1.3.7}Zapisz\_\discretionary {-}{}{}Wyniki}{13}{subsubsection.5.1.3.7}
+\contentsline {subsection}{\numberline {5.1.4}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{14}{subsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.4.1}\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb}{14}{subsubsection.5.1.4.1}
+\contentsline {subsubsection}{\numberline {5.1.4.2}Ilosc\_\discretionary {-}{}{}Danych}{14}{subsubsection.5.1.4.2}
+\contentsline {subsubsection}{\numberline {5.1.4.3}iterator}{14}{subsubsection.5.1.4.3}
+\contentsline {subsubsection}{\numberline {5.1.4.4}iterator\_\discretionary {-}{}{}sredniej}{14}{subsubsection.5.1.4.4}
+\contentsline {subsubsection}{\numberline {5.1.4.5}rozmiar\_\discretionary {-}{}{}tablic}{14}{subsubsection.5.1.4.5}
+\contentsline {subsubsection}{\numberline {5.1.4.6}srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu}{14}{subsubsection.5.1.4.6}
+\contentsline {subsubsection}{\numberline {5.1.4.7}stoper\_\discretionary {-}{}{}start}{14}{subsubsection.5.1.4.7}
+\contentsline {subsubsection}{\numberline {5.1.4.8}stoper\_\discretionary {-}{}{}stop}{14}{subsubsection.5.1.4.8}
+\contentsline {subsubsection}{\numberline {5.1.4.9}wielkosc\_\discretionary {-}{}{}problemu}{14}{subsubsection.5.1.4.9}
+\contentsline {section}{\numberline {5.2}Dokumentacja szablonu klasy Element$<$ TYP $>$}{15}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{15}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Dokumentacja konstruktora i destruktora}{15}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Element}{15}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}$\sim $Element}{16}{subsubsection.5.2.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{16}{subsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.3.1}nastepny}{16}{subsubsection.5.2.3.1}
+\contentsline {subsubsection}{\numberline {5.2.3.2}wartosc}{16}{subsubsection.5.2.3.2}
+\contentsline {section}{\numberline {5.3}Dokumentacja szablonu klasy Kolejka$<$ TYP $>$}{16}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{17}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Dokumentacja funkcji sk\IeC {\l }adowych}{17}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}POP}{17}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.2}PUSH}{17}{subsubsection.5.3.2.2}
+\contentsline {subsubsection}{\numberline {5.3.2.3}SHOW}{18}{subsubsection.5.3.2.3}
+\contentsline {subsubsection}{\numberline {5.3.2.4}SIZE}{18}{subsubsection.5.3.2.4}
+\contentsline {section}{\numberline {5.4}Dokumentacja szablonu klasy Lista$<$ TYP $>$}{18}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{19}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Dokumentacja konstruktora i destruktora}{19}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Lista}{19}{subsubsection.5.4.2.1}
+\contentsline {subsubsection}{\numberline {5.4.2.2}$\sim $Lista}{19}{subsubsection.5.4.2.2}
+\contentsline {subsection}{\numberline {5.4.3}Dokumentacja funkcji sk\IeC {\l }adowych}{19}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}POP}{19}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.3.2}PUSH}{20}{subsubsection.5.4.3.2}
+\contentsline {subsubsection}{\numberline {5.4.3.3}SHOW}{20}{subsubsection.5.4.3.3}
+\contentsline {subsubsection}{\numberline {5.4.3.4}SIZE}{20}{subsubsection.5.4.3.4}
+\contentsline {subsection}{\numberline {5.4.4}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{20}{subsection.5.4.4}
+\contentsline {subsubsection}{\numberline {5.4.4.1}ostatni}{20}{subsubsection.5.4.4.1}
+\contentsline {subsubsection}{\numberline {5.4.4.2}pierwszy}{20}{subsubsection.5.4.4.2}
+\contentsline {section}{\numberline {5.5}Dokumentacja szablonu klasy Stos$<$ TYP $>$}{21}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{22}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Dokumentacja funkcji sk\IeC {\l }adowych}{22}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}POP}{22}{subsubsection.5.5.2.1}
+\contentsline {subsubsection}{\numberline {5.5.2.2}PUSH}{22}{subsubsection.5.5.2.2}
+\contentsline {subsubsection}{\numberline {5.5.2.3}SHOW}{23}{subsubsection.5.5.2.3}
+\contentsline {subsubsection}{\numberline {5.5.2.4}SIZE}{23}{subsubsection.5.5.2.4}
+\contentsline {chapter}{\numberline {6}Dokumentacja plik\IeC {\'o}w}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Dokumentacja pliku Benchmark.cpp}{25}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{26}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Dokumentacja pliku Benchmark.hh}{26}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{27}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Dokumentacja pliku Element.hh}{27}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{28}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Dokumentacja pliku Kolejka.hh}{28}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{29}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}Dokumentacja pliku Lista.hh}{29}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{31}{subsection.6.5.1}
+\contentsline {section}{\numberline {6.6}Dokumentacja pliku Stos.hh}{31}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{32}{subsection.6.6.1}
+\contentsline {section}{\numberline {6.7}Dokumentacja pliku strona.dox}{32}{section.6.7}
+\contentsline {section}{\numberline {6.8}Dokumentacja pliku Struktury.cpp}{32}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Dokumentacja funkcji}{33}{subsection.6.8.1}
+\contentsline {subsubsection}{\numberline {6.8.1.1}main}{33}{subsubsection.6.8.1.1}
+\contentsline {section}{\numberline {6.9}Dokumentacja pliku Test.cpp}{34}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Dokumentacja definicji}{35}{subsection.6.9.1}
+\contentsline {subsubsection}{\numberline {6.9.1.1}STALA}{35}{subsubsection.6.9.1.1}
+\contentsline {subsection}{\numberline {6.9.2}Dokumentacja funkcji}{35}{subsection.6.9.2}
+\contentsline {subsubsection}{\numberline {6.9.2.1}funkcja}{35}{subsubsection.6.9.2.1}
+\contentsline {subsubsection}{\numberline {6.9.2.2}main}{36}{subsubsection.6.9.2.2}

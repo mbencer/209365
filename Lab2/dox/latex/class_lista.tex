@@ -1,0 +1,203 @@
+\hypertarget{class_lista}{
+\section{Dokumentacja szablonu klasy Lista$<$ TYP $>$}
+\label{class_lista}\index{Lista@{Lista}}
+}
+
+
+Klasa \hyperlink{class_lista}{Lista}.  
+
+
+
+
+{\ttfamily \#include $<$Lista.hh$>$}
+
+
+
+Diagram dziedziczenia dla Lista$<$ TYP $>$
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_lista__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_lista_ae2559bf0c96569265d5f9f7f9cd4cb3a}{Lista} ()
+\item 
+\hyperlink{class_lista_a7271d867e38a838c25ffb5aa6b73faef}{$\sim$Lista} ()
+\item 
+void \hyperlink{class_lista_a5c21bab22b627c729ad0c90e1f835901}{PUSH} (TYP liczba)
+\item 
+int \hyperlink{class_lista_a99390f363a7deceed9c99d717f578aaa}{POP} (unsigned int Numer\_\-Elementu)
+\item 
+unsigned int \hyperlink{class_lista_a4f10ca015c6b34a322dbc1c93e313c07}{SIZE} ()
+\item 
+void \hyperlink{class_lista_a89bbb449a047593eebce602a449ac1e7}{SHOW} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_element}{Element}$<$ TYP $>$ $\ast$ \hyperlink{class_lista_a8557ec530a4dcf731449d708426fe5d5}{pierwszy}
+\item 
+\hyperlink{class_element}{Element}$<$ TYP $>$ $\ast$ \hyperlink{class_lista_aefe3a0b196bd94713eebe3f9332011b1}{ostatni}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename TYP$>$ class Lista$<$ TYP $>$}
+
+Klasa ta modeluje nam Liste Składa się z metod PUSH, POP, SIZE, SHOW oraz pól: 
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em $\ast$pierwszy}]-\/ jako wskaznik na pierwszy element \end{DoxyParams}
+
+
+Definicja w linii 27 pliku Lista.hh.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_lista_ae2559bf0c96569265d5f9f7f9cd4cb3a}{
+\index{Lista@{Lista}!Lista@{Lista}}
+\index{Lista@{Lista}!Lista@{Lista}}
+\subsubsection[{Lista}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TYP$>$ {\bf Lista}$<$ TYP $>$::{\bf Lista} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_lista_ae2559bf0c96569265d5f9f7f9cd4cb3a}
+
+
+Definicja w linii 33 pliku Lista.hh.
+
+\hypertarget{class_lista_a7271d867e38a838c25ffb5aa6b73faef}{
+\index{Lista@{Lista}!$\sim$Lista@{$\sim$Lista}}
+\index{$\sim$Lista@{$\sim$Lista}!Lista@{Lista}}
+\subsubsection[{$\sim$Lista}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TYP$>$ {\bf Lista}$<$ TYP $>$::$\sim${\bf Lista} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_lista_a7271d867e38a838c25ffb5aa6b73faef}
+
+
+Definicja w linii 34 pliku Lista.hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_lista_a99390f363a7deceed9c99d717f578aaa}{
+\index{Lista@{Lista}!POP@{POP}}
+\index{POP@{POP}!Lista@{Lista}}
+\subsubsection[{POP}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TYP$>$ int {\bf Lista}$<$ TYP $>$::POP (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ Numer\_\-Elementu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_lista_a99390f363a7deceed9c99d717f578aaa}
+
+
+Definicja w linii 59 pliku Lista.hh.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_lista_a99390f363a7deceed9c99d717f578aaa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_lista_a5c21bab22b627c729ad0c90e1f835901}{
+\index{Lista@{Lista}!PUSH@{PUSH}}
+\index{PUSH@{PUSH}!Lista@{Lista}}
+\subsubsection[{PUSH}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TYP$>$ void {\bf Lista}$<$ TYP $>$::PUSH (
+\begin{DoxyParamCaption}
+\item[{TYP}]{ liczba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_lista_a5c21bab22b627c729ad0c90e1f835901}
+
+
+Reimplementowana w \hyperlink{class_kolejka_a66056e67a0514466d7771da351e8468b}{Kolejka$<$ TYP $>$} i \hyperlink{class_stos_a773cf22cb5c67bda0d2878a1ec8bc363}{Stos$<$ TYP $>$}.
+
+
+
+Definicja w linii 44 pliku Lista.hh.
+
+
+
+Oto graf wywoływań tej funkcji:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_lista_a5c21bab22b627c729ad0c90e1f835901_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_lista_a89bbb449a047593eebce602a449ac1e7}{
+\index{Lista@{Lista}!SHOW@{SHOW}}
+\index{SHOW@{SHOW}!Lista@{Lista}}
+\subsubsection[{SHOW}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TYP$>$ void {\bf Lista}$<$ TYP $>$::SHOW (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_lista_a89bbb449a047593eebce602a449ac1e7}
+
+
+Reimplementowana w \hyperlink{class_kolejka_a26b5afbcc9f892a41acbd3aed062ee50}{Kolejka$<$ TYP $>$} i \hyperlink{class_stos_a8f1c40b779a699c84b20eeb59ca67f06}{Stos$<$ TYP $>$}.
+
+
+
+Definicja w linii 108 pliku Lista.hh.
+
+\hypertarget{class_lista_a4f10ca015c6b34a322dbc1c93e313c07}{
+\index{Lista@{Lista}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!Lista@{Lista}}
+\subsubsection[{SIZE}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TYP$>$ unsigned int {\bf Lista}$<$ TYP $>$::SIZE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_lista_a4f10ca015c6b34a322dbc1c93e313c07}
+
+
+Reimplementowana w \hyperlink{class_kolejka_a06a7fe157ff434771a700ffd084dc7a2}{Kolejka$<$ TYP $>$} i \hyperlink{class_stos_a6ff0d2aa5946c0dc413e3236ca99fd26}{Stos$<$ TYP $>$}.
+
+
+
+Definicja w linii 88 pliku Lista.hh.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_lista_aefe3a0b196bd94713eebe3f9332011b1}{
+\index{Lista@{Lista}!ostatni@{ostatni}}
+\index{ostatni@{ostatni}!Lista@{Lista}}
+\subsubsection[{ostatni}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TYP$>$ {\bf Element}$<$TYP$>$$\ast$ {\bf Lista}$<$ TYP $>$::{\bf ostatni}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_lista_aefe3a0b196bd94713eebe3f9332011b1}
+
+
+Definicja w linii 31 pliku Lista.hh.
+
+\hypertarget{class_lista_a8557ec530a4dcf731449d708426fe5d5}{
+\index{Lista@{Lista}!pierwszy@{pierwszy}}
+\index{pierwszy@{pierwszy}!Lista@{Lista}}
+\subsubsection[{pierwszy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TYP$>$ {\bf Element}$<$TYP$>$$\ast$ {\bf Lista}$<$ TYP $>$::{\bf pierwszy}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_lista_a8557ec530a4dcf731449d708426fe5d5}
+
+
+Definicja w linii 30 pliku Lista.hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_lista_8hh}{Lista.hh}\end{DoxyCompactItemize}

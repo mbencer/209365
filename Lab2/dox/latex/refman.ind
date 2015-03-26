@@ -1,0 +1,179 @@
+\begin{theindex}
+
+  \item {$\sim $Benchmark}
+    \subitem {Benchmark}, \hyperpage{11}
+  \item {$\sim $Element}
+    \subitem {Element}, \hyperpage{15}
+  \item {$\sim $Lista}
+    \subitem {Lista}, \hyperpage{19}
+  \item {\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb}
+    \subitem {Benchmark}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Benchmark}, \hyperpage{9}
+    \subitem {$\sim $Benchmark}, \hyperpage{11}
+    \subitem {\_\discretionary {-}{}{}tablica\_\discretionary {-}{}{}liczb}, 
+		\hyperpage{14}
+    \subitem {Benchmark}, \hyperpage{10}
+    \subitem {Czas\_\discretionary {-}{}{}Start}, \hyperpage{11}
+    \subitem {Czas\_\discretionary {-}{}{}Stop}, \hyperpage{11}
+    \subitem {Ilosc\_\discretionary {-}{}{}Danych}, \hyperpage{14}
+    \subitem {iterator}, \hyperpage{14}
+    \subitem {iterator\_\discretionary {-}{}{}sredniej}, \hyperpage{14}
+    \subitem {Licz\_\discretionary {-}{}{}Srednia}, \hyperpage{12}
+    \subitem {Losuj}, \hyperpage{12}
+    \subitem {rozmiar\_\discretionary {-}{}{}tablic}, \hyperpage{14}
+    \subitem {srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu}, 
+		\hyperpage{14}
+    \subitem {stoper\_\discretionary {-}{}{}start}, \hyperpage{14}
+    \subitem {stoper\_\discretionary {-}{}{}stop}, \hyperpage{14}
+    \subitem {Tablica}, \hyperpage{12}
+    \subitem {Wczytaj\_\discretionary {-}{}{}Dane}, \hyperpage{13}
+    \subitem {wielkosc\_\discretionary {-}{}{}problemu}, \hyperpage{14}
+    \subitem {Zapisz\_\discretionary {-}{}{}Wyniki}, \hyperpage{13}
+  \item {Benchmark.cpp}, \hyperpage{25}
+  \item {Benchmark.hh}, \hyperpage{26}
+
+  \indexspace
+
+  \item {Czas\_\discretionary {-}{}{}Start}
+    \subitem {Benchmark}, \hyperpage{11}
+  \item {Czas\_\discretionary {-}{}{}Stop}
+    \subitem {Benchmark}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Element}, \hyperpage{15}
+    \subitem {$\sim $Element}, \hyperpage{15}
+    \subitem {Element}, \hyperpage{15}
+    \subitem {nastepny}, \hyperpage{16}
+    \subitem {wartosc}, \hyperpage{16}
+  \item {Element.hh}, \hyperpage{27}
+
+  \indexspace
+
+  \item {funkcja}
+    \subitem {Test.cpp}, \hyperpage{35}
+
+  \indexspace
+
+  \item {Ilosc\_\discretionary {-}{}{}Danych}
+    \subitem {Benchmark}, \hyperpage{14}
+  \item {iterator}
+    \subitem {Benchmark}, \hyperpage{14}
+  \item {iterator\_\discretionary {-}{}{}sredniej}
+    \subitem {Benchmark}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Kolejka}, \hyperpage{16}
+    \subitem {POP}, \hyperpage{17}
+    \subitem {PUSH}, \hyperpage{17}
+    \subitem {SHOW}, \hyperpage{17}
+    \subitem {SIZE}, \hyperpage{18}
+  \item {Kolejka.hh}, \hyperpage{28}
+
+  \indexspace
+
+  \item {Licz\_\discretionary {-}{}{}Srednia}
+    \subitem {Benchmark}, \hyperpage{12}
+  \item {Lista}, \hyperpage{18}
+    \subitem {$\sim $Lista}, \hyperpage{19}
+    \subitem {Lista}, \hyperpage{19}
+    \subitem {ostatni}, \hyperpage{20}
+    \subitem {pierwszy}, \hyperpage{20}
+    \subitem {POP}, \hyperpage{19}
+    \subitem {PUSH}, \hyperpage{19}
+    \subitem {SHOW}, \hyperpage{20}
+    \subitem {SIZE}, \hyperpage{20}
+  \item {Lista.hh}, \hyperpage{29}
+  \item {Losuj}
+    \subitem {Benchmark}, \hyperpage{12}
+
+  \indexspace
+
+  \item {main}
+    \subitem {Struktury.cpp}, \hyperpage{33}
+    \subitem {Test.cpp}, \hyperpage{35}
+
+  \indexspace
+
+  \item {nastepny}
+    \subitem {Element}, \hyperpage{16}
+
+  \indexspace
+
+  \item {ostatni}
+    \subitem {Lista}, \hyperpage{20}
+
+  \indexspace
+
+  \item {pierwszy}
+    \subitem {Lista}, \hyperpage{20}
+  \item {POP}
+    \subitem {Kolejka}, \hyperpage{17}
+    \subitem {Lista}, \hyperpage{19}
+    \subitem {Stos}, \hyperpage{22}
+  \item {PUSH}
+    \subitem {Kolejka}, \hyperpage{17}
+    \subitem {Lista}, \hyperpage{19}
+    \subitem {Stos}, \hyperpage{22}
+
+  \indexspace
+
+  \item {rozmiar\_\discretionary {-}{}{}tablic}
+    \subitem {Benchmark}, \hyperpage{14}
+
+  \indexspace
+
+  \item {SHOW}
+    \subitem {Kolejka}, \hyperpage{17}
+    \subitem {Lista}, \hyperpage{20}
+    \subitem {Stos}, \hyperpage{22}
+  \item {SIZE}
+    \subitem {Kolejka}, \hyperpage{18}
+    \subitem {Lista}, \hyperpage{20}
+    \subitem {Stos}, \hyperpage{23}
+  \item {srednia\_\discretionary {-}{}{}jednego\_\discretionary {-}{}{}problemu}
+    \subitem {Benchmark}, \hyperpage{14}
+  \item {STALA}
+    \subitem {Test.cpp}, \hyperpage{35}
+  \item {stoper\_\discretionary {-}{}{}start}
+    \subitem {Benchmark}, \hyperpage{14}
+  \item {stoper\_\discretionary {-}{}{}stop}
+    \subitem {Benchmark}, \hyperpage{14}
+  \item {Stos}, \hyperpage{21}
+    \subitem {POP}, \hyperpage{22}
+    \subitem {PUSH}, \hyperpage{22}
+    \subitem {SHOW}, \hyperpage{22}
+    \subitem {SIZE}, \hyperpage{23}
+  \item {Stos.hh}, \hyperpage{31}
+  \item {strona.dox}, \hyperpage{32}
+  \item {Struktury.cpp}, \hyperpage{32}
+    \subitem {main}, \hyperpage{33}
+
+  \indexspace
+
+  \item {Tablica}
+    \subitem {Benchmark}, \hyperpage{12}
+  \item {Test.cpp}, \hyperpage{34}
+    \subitem {funkcja}, \hyperpage{35}
+    \subitem {main}, \hyperpage{35}
+    \subitem {STALA}, \hyperpage{35}
+
+  \indexspace
+
+  \item {wartosc}
+    \subitem {Element}, \hyperpage{16}
+  \item {Wczytaj\_\discretionary {-}{}{}Dane}
+    \subitem {Benchmark}, \hyperpage{13}
+  \item {wielkosc\_\discretionary {-}{}{}problemu}
+    \subitem {Benchmark}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Zapisz\_\discretionary {-}{}{}Wyniki}
+    \subitem {Benchmark}, \hyperpage{13}
+
+\end{theindex}

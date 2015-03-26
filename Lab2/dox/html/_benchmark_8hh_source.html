@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Struktury: Plik źródłowy Benchmark.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>Benchmark.hh</h1>  </div>
+</div>
+<div class="contents">
+<a href="_benchmark_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef BENCHMARK_HH</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define BENCHMARK_HH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00011"></a>00011 <span class="keyword">using namespace </span>std;
+<a name="l00012"></a>00012 
+<a name="l00030"></a><a class="code" href="class_benchmark.html">00030</a> <span class="keyword">class </span><a class="code" href="class_benchmark.html" title="Klasa Benchmark.">Benchmark</a>
+<a name="l00031"></a>00031 {
+<a name="l00032"></a><a class="code" href="class_benchmark.html#af550349e9f512c47bd5f4fd6f0630913">00032</a>   <span class="keywordtype">int</span>* _tablica_liczb;
+<a name="l00033"></a><a class="code" href="class_benchmark.html#a9809e00b248161927de3cbd71fd8d424">00033</a>   <span class="keywordtype">float</span> stoper_start;
+<a name="l00034"></a><a class="code" href="class_benchmark.html#ae1cbaa987a9ac13bc40dbe4b84a587b6">00034</a>   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iterator;
+<a name="l00035"></a><a class="code" href="class_benchmark.html#a12925bcca68de983919ebd5d6b9e2b01">00035</a>   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iterator_sredniej;
+<a name="l00036"></a><a class="code" href="class_benchmark.html#aa33949783712cd5f501a32b4f497f8e9">00036</a>   <span class="keywordtype">float</span>* stoper_stop;
+<a name="l00037"></a><a class="code" href="class_benchmark.html#a1eea18c08dc325a4723ef0b2084938d6">00037</a>   <span class="keywordtype">float</span>* srednia_jednego_problemu;
+<a name="l00038"></a><a class="code" href="class_benchmark.html#a30d4c478ec859f45df0ac80ac1a89203">00038</a>   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rozmiar_tablic;
+<a name="l00039"></a>00039 <span class="comment">/*</span>
+<a name="l00040"></a>00040 <span class="comment"> * \brief Metoda Losuj()</span>
+<a name="l00041"></a>00041 <span class="comment"> *</span>
+<a name="l00042"></a>00042 <span class="comment"> *  Metoda ta służy do losowania wartosci dla naszej _tablica_liczb</span>
+<a name="l00043"></a>00043 <span class="comment"> *</span>
+<a name="l00044"></a>00044 <span class="comment"> * \param[in] _tablica_liczb - tablica liczb dla ktorej bedziemy losowali te wartosci</span>
+<a name="l00045"></a>00045 <span class="comment"> * \param[in] rozmiar - rozmiar naszej tablicy (ile liczb bedziemy losowali)</span>
+<a name="l00046"></a>00046 <span class="comment"> */</span>
+<a name="l00047"></a>00047   <span class="keywordtype">void</span> Losuj(<span class="keywordtype">int</span>* tablica_liczb, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rozmiar);
+<a name="l00048"></a>00048 <span class="comment">/*</span>
+<a name="l00049"></a>00049 <span class="comment"> * \brief Metoda Wczytaj_Dane()</span>
+<a name="l00050"></a>00050 <span class="comment"> *</span>
+<a name="l00051"></a>00051 <span class="comment"> *  Metoda ta służy do wczytania wartosci dla naszej _tablica_liczb, ktora tworzy wewnatrz, po przeliczeniu ilosci danych</span>
+<a name="l00052"></a>00052 <span class="comment"> *</span>
+<a name="l00053"></a>00053 <span class="comment"> * \return Funkcja zwraca ilosc danych w pliku</span>
+<a name="l00054"></a>00054 <span class="comment"> *</span>
+<a name="l00055"></a>00055 <span class="comment"> */</span>
+<a name="l00056"></a>00056   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Wczytaj_Dane ();
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059   <span class="keyword">public</span>:
+<a name="l00060"></a>00060 
+<a name="l00072"></a>00072   <a class="code" href="class_benchmark.html" title="Klasa Benchmark.">Benchmark</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rozmiar_problemu, <span class="keywordtype">double</span> stala);
+<a name="l00073"></a><a class="code" href="class_benchmark.html#aef4c89962e86bfe41f406c620e4b6ec6">00073</a>   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* wielkosc_problemu;
+<a name="l00074"></a><a class="code" href="class_benchmark.html#a5f29a9983dd88241a17c4a9b2a86e9e1">00074</a>   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ilosc_Danych;
+<a name="l00075"></a>00075 <span class="comment">/*</span>
+<a name="l00076"></a>00076 <span class="comment"> * \brief Metoda Tablica</span>
+<a name="l00077"></a>00077 <span class="comment"> *</span>
+<a name="l00078"></a>00078 <span class="comment"> *  Metoda ta służy do wygodnego pobierania wartości z _tablica_liczb</span>
+<a name="l00079"></a>00079 <span class="comment"> *</span>
+<a name="l00080"></a>00080 <span class="comment"> *  Zwracane wartości:</span>
+<a name="l00081"></a>00081 <span class="comment"> *  \return Funkcja zwraca odpowiednie pole _tablica_liczb</span>
+<a name="l00082"></a>00082 <span class="comment"> */</span>
+<a name="l00083"></a><a class="code" href="class_benchmark.html#a15630af66f064ee79928ae58f74c87c0">00083</a>   <span class="keywordtype">double</span> <a class="code" href="class_benchmark.html#a15630af66f064ee79928ae58f74c87c0">Tablica</a>(<span class="keywordtype">int</span> i) {<span class="keywordflow">return</span> _tablica_liczb[i];}
+<a name="l00084"></a>00084 <span class="comment">/*</span>
+<a name="l00085"></a>00085 <span class="comment"> * \brief Metoda Licz_Srednia()</span>
+<a name="l00086"></a>00086 <span class="comment"> *</span>
+<a name="l00087"></a>00087 <span class="comment"> *  Metoda ta służy do liczenia sredniego czasu wykonania jednego pomiaru dla</span>
+<a name="l00088"></a>00088 <span class="comment"> *  okreslonej wielkosci problemu</span>
+<a name="l00089"></a>00089 <span class="comment"> *  \return Funkcja zwraca odpowiednie pole srednia_jednego_problemu, </span>
+<a name="l00090"></a>00090 <span class="comment"> *   ktore jest odpowiednie dla danego problemu</span>
+<a name="l00091"></a>00091 <span class="comment"> *</span>
+<a name="l00092"></a>00092 <span class="comment"> */</span>
+<a name="l00093"></a>00093   <span class="keywordtype">float</span> Licz_Srednia();
+<a name="l00094"></a>00094 <span class="comment">/*</span>
+<a name="l00095"></a>00095 <span class="comment"> * \brief Metoda Czas_Start()</span>
+<a name="l00096"></a>00096 <span class="comment"> *</span>
+<a name="l00097"></a>00097 <span class="comment"> *  Metoda ta służy do wlaczenia pomiaru czasu</span>
+<a name="l00098"></a>00098 <span class="comment"> * \return Funkcja zwraca odpowiednie pole stoper_start, ktore nie jest tablica</span>
+<a name="l00099"></a>00099 <span class="comment"> *  ze wzgledu na to ze dane nie beda nam uzyteczne</span>
+<a name="l00100"></a>00100 <span class="comment"> */</span>
+<a name="l00101"></a>00101   <span class="keywordtype">float</span> Czas_Start();
+<a name="l00102"></a>00102 <span class="comment">/*</span>
+<a name="l00103"></a>00103 <span class="comment"> * \brief Metoda Czas_Stop()</span>
+<a name="l00104"></a>00104 <span class="comment"> *</span>
+<a name="l00105"></a>00105 <span class="comment"> *  Metoda ta służy do zatrzymania pomiaru czasu.</span>
+<a name="l00106"></a>00106 <span class="comment"> * \return Funkcja zwraca odpowiednie pole stoper_stop[i] ktore </span>
+<a name="l00107"></a>00107 <span class="comment"> *  pozniej zostanie uzyte podczas liczenia sredniej</span>
+<a name="l00108"></a>00108 <span class="comment"> *</span>
+<a name="l00109"></a>00109 <span class="comment"> */</span>
+<a name="l00110"></a>00110   <span class="keywordtype">float</span> Czas_Stop();
+<a name="l00111"></a>00111 <span class="comment">/*</span>
+<a name="l00112"></a>00112 <span class="comment"> * \brief Metoda Zapisz_Wyniki()</span>
+<a name="l00113"></a>00113 <span class="comment"> *</span>
+<a name="l00114"></a>00114 <span class="comment"> *  Metoda ta służy do zapisania wynikow w postaci rozmiaru problemu </span>
+<a name="l00115"></a>00115 <span class="comment"> *  i odpowiadajacemu temu problemowi czasu. </span>
+<a name="l00116"></a>00116 <span class="comment"> *  Plik zostaje zapisany pod nazwa podana przez nas w formacie</span>
+<a name="l00117"></a>00117 <span class="comment"> *  *.csv - do latwego przetworzenia danych w programie do wykresu.</span>
+<a name="l00118"></a>00118 <span class="comment"> *  \return Funkcja zwraca jeden czas wykonania funkcji</span>
+<a name="l00119"></a>00119 <span class="comment"> *</span>
+<a name="l00120"></a>00120 <span class="comment"> */</span>
+<a name="l00121"></a>00121   <span class="keywordtype">void</span> Zapisz_Wyniki();
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123 
+<a name="l00124"></a>00124 
+<a name="l00125"></a><a class="code" href="class_benchmark.html#a20476e07f09e2b20ed3e9a7f13a570e6">00125</a>   ~<a class="code" href="class_benchmark.html" title="Klasa Benchmark.">Benchmark</a>()
+<a name="l00126"></a>00126   {
+<a name="l00127"></a>00127      <span class="keyword">delete</span> [] _tablica_liczb; 
+<a name="l00128"></a>00128      <span class="keyword">delete</span> [] stoper_stop;
+<a name="l00129"></a>00129      <span class="keyword">delete</span> [] wielkosc_problemu;
+<a name="l00130"></a>00130      <span class="keyword">delete</span> [] srednia_jednego_problemu;
+<a name="l00131"></a>00131   }
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 };
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135 <span class="preprocessor">#endif</span>
+<a name="l00136"></a>00136 <span class="preprocessor"></span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Wygenerowano Thu Mar 26 2015 06:26:58 dla Struktury programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

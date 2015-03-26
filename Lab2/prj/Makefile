@@ -3,15 +3,25 @@
 #
 CPPFLAGS= -c -g -Iinc -Wall -pedantic
 
-__start__: Struktury
-	./Struktury
+__start__: Benchmark
+	./Benchmark
 
-Struktury: obj/Lista.o
-	g++ -Wall -pedantic -o Struktury obj/Lista.o 
+Benchmark: obj/Test.o obj/Benchmark.o
+	g++ -Wall -pedantic -o Benchmark obj/Test.o obj/Benchmark.o 
 
-obj/Lista.o: src/Lista.cpp inc/Lista.hh 
-	g++ ${CPPFLAGS} -o obj/Lista.o src/Lista.cpp
+obj/Test.o: src/Test.cpp inc/Benchmark.hh inc/Element.hh inc/Lista.hh inc/Kolejka.hh inc/Stos.hh 
+	g++ ${CPPFLAGS} -o obj/Test.o src/Test.cpp
+
+
+obj/Benchmark.o: src/Benchmark.cpp inc/Benchmark.hh 
+	g++ ${CPPFLAGS} -o obj/Benchmark.o src/Benchmark.cpp
+
+Struktury: obj/Struktury.o
+	g++ -Wall -pedantic -o Struktury obj/Struktury.o 
+
+obj/Struktury.o: src/Struktury.cpp inc/Element.hh inc/Lista.hh inc/Kolejka.hh inc/Stos.hh
+	g++ ${CPPFLAGS} -o obj/Struktury.o src/Struktury.cpp
 
 
 clean:
-	rm -f obj/*.o Benchmark
+	rm -f obj/*.o Struktury Test

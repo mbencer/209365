@@ -4,8 +4,7 @@ CFLAGS = -Wall -pedantic -Iinc
 #-std=c99
 OBJ =\
 	obj/main.o \
-	obj/Lista.o \
-	obj/quick_sort.o
+	obj/Lista.o
 
 INC = \
 	inc/Lista.hh

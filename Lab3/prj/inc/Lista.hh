@@ -44,21 +44,26 @@ class Lista
  *
  * \param[in] liczba - zmienne ktore bedziemy wrzucali, typu ktory wybierzemy
  */
-void PUSH (TYP liczba)
+void PUSH (TYP liczba, unsigned int index)
 {
-   if(koniec < _rozmiar_listy)
+   if(koniec <= _rozmiar_listy)
    {
-     tab[koniec] = liczba;
-     koniec++;
+	   Powiekszenie_Pamieci();
     
-   } else 
-   {
-     Powiekszenie_Pamieci();
-     tab[koniec] = liczba;
-     koniec++;
    }
-   
+	for (int pos = koniec; pos >= index; pos--) {
+		tab[pos] = tab[pos-1];
 }
+	tab[index-1] = liczba;
+	koniec++;
+	_rozmiar_listy++;
+}
+
+void SET(TYP liczba, unsigned int index) {
+	tab[index-1]=liczba;
+}
+
+
 //ile nowych komorek
 void Powiekszenie_Pamieci()
 {
@@ -94,13 +99,27 @@ void Zmniejszenie_Pamieci()
  * \param[in] liczba - numer elementu który chcemy usunac, pierwszy 1, ostatni metoda SIZE()
  * \return Funkcja zwraca 0 gdy metoda zostala wlasciwie uzyta, wartosc rozna od 0 w przypadku bledu
  */
-int POP (int liczba)
+TYP POP (unsigned int index)
 {
-   if (SIZE() == 0) {cout<<"Tablica pusta !!!"<<endl; return -1;}
-   if(SIZE()*4 <= _rozmiar_listy) Zmniejszenie_Pamieci();
-   if(liczba == 1) {poczatek++; return tab[poczatek-1];}
-    else if(liczba == SIZE()) {koniec--; return tab[koniec+1];}
-     else {cout<<"Niepoprawny wybor usuniecia elementu!!!"<<endl; return -2;}
+	if((index>=1) && (index<=koniec) ){
+	for (int pos = koniec; pos >= index; pos--) {
+	tab[pos] = tab[pos-1];
+	}
+	koniec++;
+	_rozmiar_listy++;
+
+	return tab[index-1];
+	}
+	return -1;
+}
+
+TYP GET (unsigned int index)
+{
+	if((index>=1) && (index<=koniec) ){
+		return tab[index-1];
+	}
+	cout<<"Pobieranie poza zakresem";
+	return -1;
 }
 /*
  * \brief Metoda SIZE()

@@ -1,0 +1,55 @@
+\begin{theindex}
+
+  \item {/home/mateusz/git/209365/\discretionary {-}{}{}Lab3/prj/inc/\discretionary {-}{}{}Benchmark.\discretionary {-}{}{}hh}, 
+		\hyperpage{13}
+  \item {/home/mateusz/git/209365/\discretionary {-}{}{}Lab3/prj/inc/\discretionary {-}{}{}Kolejka.\discretionary {-}{}{}hh}, 
+		\hyperpage{13}
+  \item {/home/mateusz/git/209365/\discretionary {-}{}{}Lab3/prj/inc/\discretionary {-}{}{}Lista.\discretionary {-}{}{}hh}, 
+		\hyperpage{14}
+  \item {/home/mateusz/git/209365/\discretionary {-}{}{}Lab3/prj/inc/\discretionary {-}{}{}Stos.\discretionary {-}{}{}hh}, 
+		\hyperpage{14}
+  \item {/home/mateusz/git/209365/\discretionary {-}{}{}Lab3/prj/inc/\discretionary {-}{}{}Timer.\discretionary {-}{}{}hh}, 
+		\hyperpage{14}
+  \item {/home/mateusz/git/209365/\discretionary {-}{}{}Lab3/prj/src/\discretionary {-}{}{}Timer.\discretionary {-}{}{}cpp}, 
+		\hyperpage{15}
+
+  \indexspace
+
+  \item {Benchmark}
+    \subitem {Benchmark}, \hyperpage{7}
+  \item {Benchmark$<$ T $>$}, \hyperpage{7}
+
+  \indexspace
+
+  \item {diff\discretionary {-}{}{}Time\discretionary {-}{}{}Ms}
+    \subitem {Timer}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Kolejka$<$ T\discretionary {-}{}{}Y\discretionary {-}{}{}P $>$}, 
+		\hyperpage{8}
+
+  \indexspace
+
+  \item {Lista$<$ T\discretionary {-}{}{}Y\discretionary {-}{}{}P $>$}, 
+		\hyperpage{8}
+
+  \indexspace
+
+  \item {start\discretionary {-}{}{}Timer}
+    \subitem {Timer}, \hyperpage{10}
+  \item {stop\discretionary {-}{}{}Timer}
+    \subitem {Timer}, \hyperpage{11}
+  \item {Stos$<$ T\discretionary {-}{}{}Y\discretionary {-}{}{}P $>$}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {Timer}, \hyperpage{10}
+    \subitem {diff\discretionary {-}{}{}Time\discretionary {-}{}{}Ms}, 
+		\hyperpage{10}
+    \subitem {start\discretionary {-}{}{}Timer}, \hyperpage{10}
+    \subitem {stop\discretionary {-}{}{}Timer}, \hyperpage{11}
+    \subitem {Timer}, \hyperpage{10}
+
+\end{theindex}

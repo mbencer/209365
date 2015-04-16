@@ -1,136 +1,148 @@
-#ifndef BENCHMARK_HH
-#define BENCHMARK_HH
+/**
+*
+\file
+Benchmark.hh
+*
+\brief
+Deklaracja i definicja (razem, bo szablon) klasy Benchmark
+*/
+#ifndef BENCHMARK_H_
+#define BENCHMARK_H_
+#include "../inc/Lista.hh"
+#include "../inc/quick_sort.hh"
+#include "../inc/Timer.hh"
+
 #include <iostream>
-/*!
- *\file
- *\brief Definicja klasy Benchmark
- *
- * Plik zawiera definicje klasy Benchmark ktora bedzie wyznaczala
- * nam punkty do wyznaczenia zlozonosci obliczeniowej.
- */
-using namespace std;
+#include <cstdlib>
+#include <cstdio>
+#include <ctime>
+#include <string>
 
-/*!
- * \brief Klasa Benchmark
- *
- * Klasa ta modeluje nam test dla funkcji
- * Składa się z pól:
- * \param[in] _tablica_liczb - która przechowuje nasze dane ktorymi bedziemy testowali funkcje
- * \param[in] stoper_start - przechowuje poczatek mierzenia czasu
- * \param[in] iterator - sluzy nam do iterowania od 0 do 9 (10 prob) zatrzymania czasu
- * \param[in] iterator_sredniej - sluzy nam do iterowania kolejnego pomiaru 
- * sredniej w zaleznosci od ilosci prob 
- * \param[in] stoper_stop - przechowuje nam 10 wynikow pomiaru czasu (obliczony wynik jednego pomiaru)
- * \param[in] srednia_jednego_problemu - przechowuje tablice sredniego czasu wykonania pomiarow dla poszczegolnych prob
- * \param[in] ilosc_problemu - przechowuje nam jak duzo prob bedzie wykonywanych    
- * \param[in] Ilosc_Danych - ilosc danych na ktorych bedziemy pracowali     
- * \param[in] wielkosc_problemu - ilosc pojedynczego problemu(ilosci danych na 1 probe)
- */
+/**
+\brief
+Klasa do przeprowadzenia testów na kontenerach danych
+*
+*
+Klasa odpwiada za pomiar czasu koniecznego do umieszczenia określonej liczby danych
+na stosie, kolejce oraz liście
+*/
+template <class T>
+class Benchmark {
+private:
+	unsigned int _numberOfMeasurements;
+	unsigned int _numberTest;
+	/**
+	\brief
+	* Liczby w tablicy określają jaką ilość danych (jak dużą listę) będziemy kolejno sortować
+	* (w celu pomiaru poptrzebnego czasu dla każdej wielkości)
+	*/
+	unsigned int* _test_list_sizes;
 
-class Benchmark
-{
-  int* _tablica_liczb;
-  float stoper_start;
-  unsigned int iterator;
-  unsigned int iterator_sredniej;
-  float* stoper_stop;
-  float* srednia_jednego_problemu;
-  unsigned int rozmiar_tablic;
-/*
- * \brief Metoda Losuj()
- *
- *  Metoda ta służy do losowania wartosci dla naszej _tablica_liczb
- *
- * \param[in] _tablica_liczb - tablica liczb dla ktorej bedziemy losowali te wartosci
- * \param[in] rozmiar - rozmiar naszej tablicy (ile liczb bedziemy losowali)
- */
-  void Losuj(int* tablica_liczb, unsigned int rozmiar);
-/*
- * \brief Metoda Wczytaj_Dane()
- *
- *  Metoda ta służy do wczytania wartosci dla naszej _tablica_liczb, ktora tworzy wewnatrz, po przeliczeniu ilosci danych
- *
- * \return Funkcja zwraca ilosc danych w pliku
- *
- */
-  unsigned int Wczytaj_Dane ();
+	/**
+	\brief
+	Zmięnna służąca do pomiaru czasu potrzebnego na dodawanie elementów do kontenerów.
+	*/
+	Timer _timer;
+
+	/**
+	\brief
+	Tablica zawierająca wyniki przeprowadzonych testów na poszczególnym kontenerze
+	*/
+	double* _resoults;
 
 
-  public:
+	/**
+	\brief
+	Metoda służąca do wypisywania wyników pomiarów
+	*
+	*\param container_name nazwa kontenera, dla które wyświetlone zostaną wyniki pomiarów
+	*/
 
-/*!
- * \brief Inicjalizator klasy Benchmark
- *
- *  Inicjalizator ten służy do określania początkowych wartości
- *  pól klasy oraz wyboru na jakich danych bedziemy pracowali
- *  (losowe/wczytane)
- *
- * Opis argumentów:
- * \param[in] rozmiar_problemu - ilosc maksymalnej liczby wprowadzanych danych
- * \param[in] stala - stala przez ktora bedziemy mnozyli, aby np.uzyskac wiecej wynikow najlepszy przedzial (1.1-10)
- */
-  Benchmark(unsigned int rozmiar_problemu, double stala);
-  unsigned int* wielkosc_problemu;
-  unsigned int Ilosc_Danych;
-/*
- * \brief Metoda Tablica
- *
- *  Metoda ta służy do wygodnego pobierania wartości z _tablica_liczb
- *
- *  Zwracane wartości:
- *  \return Funkcja zwraca odpowiednie pole _tablica_liczb
- */
-  double Tablica(int i) {return _tablica_liczb[i];}
-/*
- * \brief Metoda Licz_Srednia()
- *
- *  Metoda ta służy do liczenia sredniego czasu wykonania jednego pomiaru dla
- *  okreslonej wielkosci problemu
- *  \return Funkcja zwraca odpowiednie pole srednia_jednego_problemu, 
- *   ktore jest odpowiednie dla danego problemu
- *
- */
-  float Licz_Srednia();
-/*
- * \brief Metoda Czas_Start()
- *
- *  Metoda ta służy do wlaczenia pomiaru czasu
- * \return Funkcja zwraca odpowiednie pole stoper_start, ktore nie jest tablica
- *  ze wzgledu na to ze dane nie beda nam uzyteczne
- */
-  float Czas_Start();
-/*
- * \brief Metoda Czas_Stop()
- *
- *  Metoda ta służy do zatrzymania pomiaru czasu.
- * \return Funkcja zwraca odpowiednie pole stoper_stop[i] ktore 
- *  pozniej zostanie uzyte podczas liczenia sredniej
- *
- */
-  float Czas_Stop();
-/*
- * \brief Metoda Zapisz_Wyniki()
- *
- *  Metoda ta służy do zapisania wynikow w postaci rozmiaru problemu 
- *  i odpowiadajacemu temu problemowi czasu. 
- *  Plik zostaje zapisany pod nazwa podana przez nas w formacie
- *  *.csv - do latwego przetworzenia danych w programie do wykresu.
- *  \return Funkcja zwraca jeden czas wykonania funkcji
- *
- */
-  void Zapisz_Wyniki();
+	void showResoults(std::string pivot);
+	void fillList(Lista<T>* list, int list_size_index);
+	Benchmark();
+public:
+	/**
+	\brief
+	Konstruktor klasy Benchmark pomiarający wykładnik liczby określającej dla jakiej liczby elementów testujemy kontener
+	*
+	*\param testPower Liczba określająca wykładnik 10. Cała liczba ( 10^(_testPower) ) określa
+	liczbe elementów, które będą wkładane do kontenerów.
+	*
+	*\param Liczby w tablicy określają jaką ilość danych (jak dużą listę) będziemy kolejno sortować
+	* (w celu pomiaru poptrzebnego czasu dla każdej wielkości)
+	*/
+	Benchmark(unsigned int* test_list_sizes, unsigned int size, unsigned int number_of_memeasurements);
+
+	void testQuickSort(Lista<T>* list, PIVOT piv);
 
 
-
-  ~Benchmark()
-  {
-     delete [] _tablica_liczb; 
-     delete [] stoper_stop;
-     delete [] wielkosc_problemu;
-     delete [] srednia_jednego_problemu;
-  }
 
 };
 
-#endif
+template <typename T>
+Benchmark<T>::Benchmark(unsigned int* test_list_sizes, unsigned int size, unsigned int number_of_memeasurements) {
+	_numberOfMeasurements=number_of_memeasurements;
+	_numberTest = size;
+	_test_list_sizes = new unsigned int[_numberTest];
+	for(int i=0;i<_numberTest;i++) {
+		_test_list_sizes[i] = test_list_sizes[i];
+	}
+	_resoults = new double[_numberTest];
+}
 
+template <typename T>
+void Benchmark<T>::testQuickSort(Lista<T>* list, PIVOT piv) {
+
+	for(int i=0;i<_numberTest;i++) {
+		for(int j=0;j<_numberOfMeasurements;j++) {
+			delete list;
+			list = new Lista<T>();
+			fillList(list, i);
+			_timer.startTimer();
+			quick_sort(list,1,list->SIZE(), piv);
+			_timer.stopTimer();
+			_resoults[i] += (_timer.diffTimeMs())/_numberOfMeasurements;
+		}
+	}
+
+	switch(piv) {
+	case FIRST:
+		showResoults("FIRST");
+		break;
+	case LAST:
+		showResoults("LAST");
+		break;
+	case RANDOM:
+		showResoults("RANDOM");
+		break;
+	case CENTER:
+		showResoults("CENTER");
+		break;
+	case MEDIAN_OF_THREE:
+		showResoults("MEDIAN_OF_THREE");
+		break;
+	}
+
+	}
+
+template <typename T>
+void Benchmark<T>::fillList(Lista<T>* list, int list_size_index) {
+	srand((unsigned)time(NULL));
+	for(int i=1;i<= _test_list_sizes[list_size_index];i++) {
+		list->PUSH(rand()%MAX_RANDOM,i);
+	}
+}
+
+template <typename T>
+void Benchmark<T>::showResoults(std::string pivot) {
+	std::cout<<"Quick sort,"<<" Pivot: "<<pivot<<" \n";
+	for(int i=0;i<_numberTest;i++) {
+		std::cout<<i+1<<". "<<" N="<<_test_list_sizes[i]<<" "<<_resoults[i]<<" ms \n";
+	}
+	std::cout<<"\n";
+}
+
+
+
+#endif /* BENCHMARK_H_ */

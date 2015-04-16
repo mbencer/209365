@@ -1,0 +1,92 @@
+\hypertarget{class_timer}{\section{Dokumentacja klasy Timer}
+\label{class_timer}\index{Timer@{Timer}}
+}
+
+
+Klasa do pomiaru różnicy czasów.  
+
+
+
+
+{\ttfamily \#include $<$Timer.\-hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_timer_a5f16e8da27d2a5a5242dead46de05d97}{Timer} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor zerujący parametry. \end{DoxyCompactList}\item 
+void \hyperlink{class_timer_aa8c887576ec3b0d68c10ebf4097c367c}{start\-Timer} ()
+\begin{DoxyCompactList}\small\item\em Zmierzenie czasu rozpoczęcia pomiaru. \end{DoxyCompactList}\item 
+void \hyperlink{class_timer_a27f97da1b1d19ad74a847703ca25c455}{stop\-Timer} ()
+\begin{DoxyCompactList}\small\item\em Zmierzenie czasu zakończenia pomiaru. \end{DoxyCompactList}\item 
+double \hyperlink{class_timer_afa5d5cd3dab1aa6a67278dffd6a42dbf}{diff\-Time\-Ms} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca różnice czasu pomiędzy czasem rozpoczęcia i zakończenia pomiaru. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa do pomiaru różnicy czasów. 
+
+Klasa pozwala na pomiar czasów w danych momentach oraz na zwrócenie czasu, który upłynał pomiędzy tymi momentami 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_timer_a5f16e8da27d2a5a5242dead46de05d97}{\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\subsubsection[{Timer}]{\setlength{\rightskip}{0pt plus 5cm}Timer\-::\-Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_timer_a5f16e8da27d2a5a5242dead46de05d97}
+
+
+Konstruktor zerujący parametry. 
+
+Konstruktor ten odpowiada za zerowania zmięnnych startu i stopu w celu możliwości późniejszego sprawdzenia, czy pomiary czasu konieczne do wyznaczenia różnicy zostały zrealizowane. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_timer_afa5d5cd3dab1aa6a67278dffd6a42dbf}{\index{Timer@{Timer}!diff\-Time\-Ms@{diff\-Time\-Ms}}
+\index{diff\-Time\-Ms@{diff\-Time\-Ms}!Timer@{Timer}}
+\subsubsection[{diff\-Time\-Ms}]{\setlength{\rightskip}{0pt plus 5cm}double Timer\-::diff\-Time\-Ms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_timer_afa5d5cd3dab1aa6a67278dffd6a42dbf}
+
+
+Funkcja zwracająca różnice czasu pomiędzy czasem rozpoczęcia i zakończenia pomiaru. 
+
+Różnica czasu zwracana jest w milisekundach.
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Czas zkończenia pomiaru musi być większy (późniejszy) od czasu jego rozpoczęcia
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+Zwracana jest różnica czasu zrzutowana do typu double 
+\end{DoxyReturn}
+\hypertarget{class_timer_aa8c887576ec3b0d68c10ebf4097c367c}{\index{Timer@{Timer}!start\-Timer@{start\-Timer}}
+\index{start\-Timer@{start\-Timer}!Timer@{Timer}}
+\subsubsection[{start\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\-::start\-Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_timer_aa8c887576ec3b0d68c10ebf4097c367c}
+
+
+Zmierzenie czasu rozpoczęcia pomiaru. 
+
+Funkcja zapamiętuje bierzący czas, jako czas rozpoczęcia pomiaru. \hypertarget{class_timer_a27f97da1b1d19ad74a847703ca25c455}{\index{Timer@{Timer}!stop\-Timer@{stop\-Timer}}
+\index{stop\-Timer@{stop\-Timer}!Timer@{Timer}}
+\subsubsection[{stop\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\-::stop\-Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_timer_a27f97da1b1d19ad74a847703ca25c455}
+
+
+Zmierzenie czasu zakończenia pomiaru. 
+
+Funkcja zapamiętuje bierzący czas, jako czas zakończenia pomiaru. 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/mateusz/git/209365/\-Lab3/prj/inc/\hyperlink{_timer_8hh}{Timer.\-hh}\item 
+/home/mateusz/git/209365/\-Lab3/prj/src/\hyperlink{_timer_8cpp}{Timer.\-cpp}\end{DoxyCompactItemize}

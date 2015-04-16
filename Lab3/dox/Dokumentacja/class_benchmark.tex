@@ -1,0 +1,55 @@
+\hypertarget{class_benchmark}{\section{Dokumentacja szablonu klasy Benchmark$<$ T $>$}
+\label{class_benchmark}\index{Benchmark$<$ T $>$@{Benchmark$<$ T $>$}}
+}
+
+
+Klasa do przeprowadzenia testów na kontenerach danych.  
+
+
+
+
+{\ttfamily \#include $<$Benchmark.\-hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_benchmark_a15ccd21b999908da42c58bd5d127c674}{Benchmark} (unsigned int $\ast$test\-\_\-list\-\_\-sizes, unsigned int size, unsigned int number\-\_\-of\-\_\-memeasurements)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \hyperlink{class_benchmark}{Benchmark} pomiarający wykładnik liczby określającej dla jakiej liczby elementów testujemy kontener. \end{DoxyCompactList}\item 
+\hypertarget{class_benchmark_ac6a294f9ac4fbba06f0a608eb241d3b0}{void {\bfseries test\-Quick\-Sort} (\hyperlink{class_lista}{Lista}$<$ T $>$ $\ast$list, P\-I\-V\-O\-T piv)}\label{class_benchmark_ac6a294f9ac4fbba06f0a608eb241d3b0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$class T$>$class Benchmark$<$ T $>$}
+
+Klasa do przeprowadzenia testów na kontenerach danych. 
+
+Klasa odpwiada za pomiar czasu koniecznego do umieszczenia określonej liczby danych na stosie, kolejce oraz liście 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_benchmark_a15ccd21b999908da42c58bd5d127c674}{\index{Benchmark@{Benchmark}!Benchmark@{Benchmark}}
+\index{Benchmark@{Benchmark}!Benchmark@{Benchmark}}
+\subsubsection[{Benchmark}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Benchmark}$<$ T $>$\-::{\bf Benchmark} (
+\begin{DoxyParamCaption}
+\item[{unsigned int $\ast$}]{test\-\_\-list\-\_\-sizes, }
+\item[{unsigned int}]{size, }
+\item[{unsigned int}]{number\-\_\-of\-\_\-memeasurements}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_a15ccd21b999908da42c58bd5d127c674}
+
+
+Konstruktor klasy \hyperlink{class_benchmark}{Benchmark} pomiarający wykładnik liczby określającej dla jakiej liczby elementów testujemy kontener. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em test\-Power} & Liczba określająca wykładnik 10. Cała liczba ( 10$^\wedge$(\-\_\-test\-Power) ) określa liczbe elementów, które będą wkładane do kontenerów.\\
+\hline
+{\em Liczby} & w tablicy określają jaką ilość danych (jak dużą listę) będziemy kolejno sortować (w celu pomiaru poptrzebnego czasu dla każdej wielkości) \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
+\item 
+/home/mateusz/git/209365/\-Lab3/prj/inc/\hyperlink{_benchmark_8hh}{Benchmark.\-hh}\end{DoxyCompactItemize}

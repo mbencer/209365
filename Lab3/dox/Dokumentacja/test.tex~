@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\begin{document}
+
+some text
+
+\end{document}

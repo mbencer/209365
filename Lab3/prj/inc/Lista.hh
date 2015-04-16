@@ -34,8 +34,8 @@ class Lista
 	
 	public:
         void Rozmiar(){cout<<"Rozmiar tablicy dyn: "<<_rozmiar_listy<<endl;}
-	Lista(){ tab = new TYP [5]; _rozmiar_listy = 5; poczatek = 0; koniec = 0;}
-	~Lista(){ delete [] tab;}
+	Lista(){ tab = new TYP [500]; _rozmiar_listy = 500; poczatek = 0; koniec = 0;}
+	~Lista(){ delete [] tab; _rozmiar_listy = 0; poczatek = 0; koniec = 0;}
 
 /*
  * \brief Metoda PUSH()
@@ -56,7 +56,7 @@ void PUSH (TYP liczba, unsigned int index)
 }
 	tab[index-1] = liczba;
 	koniec++;
-	_rozmiar_listy++;
+	//_rozmiar_listy++;
 }
 
 void SET(TYP liczba, unsigned int index) {
@@ -67,27 +67,11 @@ void SET(TYP liczba, unsigned int index) {
 //ile nowych komorek
 void Powiekszenie_Pamieci()
 {
-  TYP* NoweDane = new TYP [_rozmiar_listy+1];
-  _rozmiar_listy+=1;
+  _rozmiar_listy+=100;
+  TYP* NoweDane = new TYP [_rozmiar_listy];
   for( int i = poczatek; i < koniec; i++ ) NoweDane[ i ] = tab[ i ];
   if( tab != NULL ) delete[] tab; //zwolnij pamięć zajmowaną przez stare dane
   tab = NoweDane; //nadaj nowy wskaźnik zmiennej tablica
-}
-void Zmniejszenie_Pamieci()
-{
-
-  if(_rozmiar_listy/2 >= 5) //jesli tablica po pomniejszeni bedzie wieksza od 5 to zmniejsz pamiec
-  {
-  TYP* NoweDane = new TYP [_rozmiar_listy/2];
-  _rozmiar_listy/=2;
-  int iterator = 0; 
-  for( int i = poczatek; i < koniec; i++ ) {NoweDane[ iterator ] = tab[ i ]; iterator++;}
-  if( tab != NULL ) delete[] tab; //zwolnij pamięć zajmowaną przez stare dane
-  tab = NoweDane; //nadaj nowy wskaźnik zmiennej tablica
-  koniec = koniec-poczatek;
-  poczatek = 0;
-  }
-
 }
 /*
  * \brief Metoda POP()
@@ -113,6 +97,22 @@ TYP POP (unsigned int index)
 	return -1;
 }
 
+void Zmniejszenie_Pamieci()
+{
+
+  if(_rozmiar_listy/2 >= 5) //jesli tablica po pomniejszeni bedzie wieksza od 5 to zmniejsz pamiec
+  {
+  TYP* NoweDane = new TYP [_rozmiar_listy/2];
+  _rozmiar_listy/=2;
+  int iterator = 0;
+  for( int i = poczatek; i < koniec; i++ ) {NoweDane[ iterator ] = tab[ i ]; iterator++;}
+  if( tab != NULL ) delete[] tab; //zwolnij pamięć zajmowaną przez stare dane
+  tab = NoweDane; //nadaj nowy wskaźnik zmiennej tablica
+  koniec = koniec-poczatek;
+  poczatek = 0;
+  }
+
+}
 TYP GET (unsigned int index)
 {
 	if((index>=1) && (index<=koniec) ){

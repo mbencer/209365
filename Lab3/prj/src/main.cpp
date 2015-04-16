@@ -1,34 +1,38 @@
 #include <iostream>
 #include "Lista.hh"
-#include <iomanip>
-#include <cstdlib>
-#include <time.h>
-#include "quick_sort.cpp"
+#include "../inc/Benchmark.hh"
+#include "../inc/Pivot.hh"
+#include "../inc/quick_sort.hh"
 
-using namespace std;
+unsigned int test_list_sizes[] = {10, 100, 500, 1000, 5000, 10000, 30000, 50000, 80000};
+unsigned int size = 9;
+unsigned int number_of_measurements=3;
 
-const int N=10;
+PIVOT menu();
 
 int main()
 {
 
-srand((unsigned)time(NULL));
-Lista<int> l;
-for(int i = 1; i <= N; i++) {
-	l.PUSH(rand()%100,i);
-}
-l.SHOW();
-cout<<"SORT: \n";
-quick_sort(&l, 1,N);
+	Lista<int>* lista = new Lista<int>();
+	Benchmark<int> bench(test_list_sizes, size,number_of_measurements);
 
-l.SHOW();
-//cout<<"\n-------\n";
+	std::cout<<"Jaka optymalizacje elementu osiowego wybierasz? \n";
 
-//for(int i = l.SIZE(); i >= 1; i--) {
-//	cout<<l.POP(i)<<"\n";
-//}
+	bench.testQuickSort(lista, menu());
 
 return 0;
 }
 
 
+PIVOT menu() {
+	int option;
+	std::cout<<"Jaka optymalizacje elementu osiowego wybierasz? \n"
+			 <<"1. Pierwszy \n"
+			 <<"2. Ostatni \n"
+			 <<"3. Losowy \n"
+			 <<"4. Srodkowy \n"
+			 <<"5. Mediana z trzech \n";
+	std::cin>>option;
+	return (PIVOT)option;
+
+}

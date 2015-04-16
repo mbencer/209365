@@ -5,10 +5,13 @@ CFLAGS = -Wall -pedantic -Iinc
 OBJ =\
 	obj/main.o \
 	obj/Lista.o \
-	obj/quick_sort.o
+	obj/Timer.o
 
 INC = \
-	inc/Lista.hh
+	inc/Lista.hh \
+	inc/Benchmark.hh \
+	inc/Pivot.hh \
+	inc/quick_sort.hh
 
 
 all: obj main

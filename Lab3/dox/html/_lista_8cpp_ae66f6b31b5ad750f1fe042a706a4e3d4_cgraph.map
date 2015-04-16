@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_lista.html#aba90f4f62ac00f38ecf71ba3c9f1b40e" title="Lista::POP" alt="" coords="115,5,200,35"/>
-<area shape="rect" id="node5" href="$class_lista.html#a5c21bab22b627c729ad0c90e1f835901" title="Lista::PUSH" alt="" coords="109,59,205,88"/>
-<area shape="rect" id="node7" href="$class_lista.html#a81ea74ac702b5ccbe3c88b3149887975" title="Lista::Rozmiar" alt="" coords="104,112,211,141"/>
-<area shape="rect" id="node9" href="$class_lista.html#a89bbb449a047593eebce602a449ac1e7" title="Lista::SHOW" alt="" coords="108,165,207,195"/>
-<area shape="rect" id="node11" href="$class_lista.html#a4f10ca015c6b34a322dbc1c93e313c07" title="Lista::SIZE" alt="" coords="113,219,201,248"/>
-</map>

@@ -17,12 +17,16 @@
 
   \item {Benchmark}
     \subitem {Benchmark}, \hyperpage{7}
+    \subitem {test\discretionary {-}{}{}Merge\discretionary {-}{}{}Sort}, 
+		\hyperpage{8}
+    \subitem {test\discretionary {-}{}{}Quick\discretionary {-}{}{}Sort}, 
+		\hyperpage{8}
   \item {Benchmark$<$ T $>$}, \hyperpage{7}
 
   \indexspace
 
   \item {diff\discretionary {-}{}{}Time\discretionary {-}{}{}Ms}
-    \subitem {Timer}, \hyperpage{10}
+    \subitem {Timer}, \hyperpage{11}
 
   \indexspace
 
@@ -32,12 +36,12 @@
   \indexspace
 
   \item {Lista$<$ T\discretionary {-}{}{}Y\discretionary {-}{}{}P $>$}, 
-		\hyperpage{8}
+		\hyperpage{9}
 
   \indexspace
 
   \item {start\discretionary {-}{}{}Timer}
-    \subitem {Timer}, \hyperpage{10}
+    \subitem {Timer}, \hyperpage{11}
   \item {stop\discretionary {-}{}{}Timer}
     \subitem {Timer}, \hyperpage{11}
   \item {Stos$<$ T\discretionary {-}{}{}Y\discretionary {-}{}{}P $>$}, 
@@ -45,11 +49,15 @@
 
   \indexspace
 
+  \item {test\discretionary {-}{}{}Merge\discretionary {-}{}{}Sort}
+    \subitem {Benchmark}, \hyperpage{8}
+  \item {test\discretionary {-}{}{}Quick\discretionary {-}{}{}Sort}
+    \subitem {Benchmark}, \hyperpage{8}
   \item {Timer}, \hyperpage{10}
     \subitem {diff\discretionary {-}{}{}Time\discretionary {-}{}{}Ms}, 
-		\hyperpage{10}
-    \subitem {start\discretionary {-}{}{}Timer}, \hyperpage{10}
+		\hyperpage{11}
+    \subitem {start\discretionary {-}{}{}Timer}, \hyperpage{11}
     \subitem {stop\discretionary {-}{}{}Timer}, \hyperpage{11}
-    \subitem {Timer}, \hyperpage{10}
+    \subitem {Timer}, \hyperpage{11}
 
 \end{theindex}

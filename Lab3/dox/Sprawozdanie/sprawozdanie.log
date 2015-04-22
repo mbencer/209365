@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.12)  16 APR 2015 11:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.12)  22 APR 2015 01:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,6 +346,12 @@ LaTeX Warning: Label `fig1' multiply defined.
 
 LaTeX Warning: Label `fig1' multiply defined.
 
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
 )
 \openout1 = `sprawozdanie.aux'.
 
@@ -454,13 +460,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 12.
-
-Overfull \hbox (6.76172pt too wide) in paragraph at lines 13--17
-\T1/lmr/m/n/10.95 W celu mo»-li-wo-±ci im-ple-men-ta-cji al-go-rytmu sor-to-wa-
-nia ko-nieczne byªy drobne
- []
-
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 19.
+
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -488,33 +489,50 @@ File: random.png Graphic file (type png)
  <use random.png>
 Package pdftex.def Info: random.png used on input line 50.
 (pdftex.def)             Requested size: 126.0022pt x 98.35771pt.
- [2 <./first.png> <./last.png>] <center.png, id=19, 238.8925pt x 191.71625pt>
+
+<center.png, id=13, 238.8925pt x 191.71625pt>
 File: center.png Graphic file (type png)
  <use center.png>
 Package pdftex.def Info: center.png used on input line 59.
 (pdftex.def)             Requested size: 126.0022pt x 101.11766pt.
-
-<median.png, id=20, 316.18124pt x 190.7125pt>
+ [2 <./first.png>] <median.png, id=20, 316.18124pt x 190.7125pt>
 File: median.png Graphic file (type png)
  <use median.png>
 Package pdftex.def Info: median.png used on input line 68.
 (pdftex.def)             Requested size: 126.0022pt x 76.00136pt.
- [3 <./random.png> <./center.png>] [4 <./median.png>]
-<wykres.png, id=27, 516.42938pt x 297.36093pt>
+ [3 <./last.png> <./random.png>] <wykres.png, id=24, 516.42938pt x 297.36093pt>
 File: wykres.png Graphic file (type png)
- <use wykres.png>
+
+<use wykres.png>
 Package pdftex.def Info: wykres.png used on input line 79.
 (pdftex.def)             Requested size: 360.0pt x 207.29367pt.
- [5 <./wykres.png (PNG copy)>] (./sprawozdanie.aux)
+ <merge.png, id=25, 226.8475pt x 189.70876pt>
+File: merge.png Graphic file (type png)
+ <use merge.png>
+Package pdftex.def Info: merge.png used on input line 91.
+(pdftex.def)             Requested size: 126.0022pt x 105.37354pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--95
+
+ []
+
+[4 <./center.png> <./median.png>]
+<wykres2.png, id=29, 516.42938pt x 297.36093pt>
+File: wykres2.png Graphic file (type png)
+ <use wykres2.png>
+Package pdftex.def Info: wykres2.png used on input line 99.
+(pdftex.def)             Requested size: 360.0pt x 207.29367pt.
+ [5 <./wykres.png (PNG copy)>] [6 <./merge.png> <./wykres2.png (PNG copy)>]
+(./sprawozdanie.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2522 strings out of 493304
- 33427 string characters out of 6139871
- 94824 words of memory out of 5000000
- 5927 multiletter control sequences out of 15000+600000
+ 2532 strings out of 493304
+ 33565 string characters out of 6139871
+ 95840 words of memory out of 5000000
+ 5935 multiletter control sequences out of 15000+600000
  28343 words of font info for 32 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,6n,23p,539b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -525,10 +543,10 @@ hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
 /fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmsy10.pfb>
-Output written on sprawozdanie.pdf (5 pages, 200502 bytes).
+Output written on sprawozdanie.pdf (6 pages, 254054 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

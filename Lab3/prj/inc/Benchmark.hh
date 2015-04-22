@@ -10,6 +10,7 @@ Deklaracja i definicja (razem, bo szablon) klasy Benchmark
 #define BENCHMARK_H_
 #include "../inc/Lista.hh"
 #include "../inc/quick_sort.hh"
+#include "../inc/merge_sort.hh"
 #include "../inc/Timer.hh"
 
 #include <iostream>
@@ -29,7 +30,15 @@ na stosie, kolejce oraz liście
 template <class T>
 class Benchmark {
 private:
+	/**
+	\brief
+	* Liczba pomiarów z których zostanie wyciągnięta średnia
+	*/
 	unsigned int _numberOfMeasurements;
+	/**
+	\brief
+	* Ilość wymiarów listy dla której zostaną przeprowadzone testy
+	*/
 	unsigned int _numberTest;
 	/**
 	\brief
@@ -50,31 +59,60 @@ private:
 	*/
 	double* _resoults;
 
-
 	/**
 	\brief
-	Metoda służąca do wypisywania wyników pomiarów
+	Metoda służąca do wypisywania wyników pomiarów Quick Sort
 	*
-	*\param container_name nazwa kontenera, dla które wyświetlone zostaną wyniki pomiarów
+	*\param pivot element osiowy, użyty do sortowania
 	*/
-
-	void showResoults(std::string pivot);
+	void showResoultsQuick(std::string pivot);
+	/**
+	\brief
+	Metoda służąca do wypisywania wyników pomiarów Merge Sort
+	*
+	*/
+	void showResoultsMerge();
+	/**
+	\brief
+	Metoda służąca do wypełniania listy liczbami pseudolosowymi
+	*
+	*\param list lista która zostanie wypełniona
+	*\param list_size_index liczba będąca indeksem tablicy która przechowuje rozmiary do jakich ma zostać wypełniona lista
+	*/
 	void fillList(Lista<T>* list, int list_size_index);
+	/**
+	\brief
+	Konstruktor klasy Benchamrk
+	*
+	*/
 	Benchmark();
 public:
 	/**
 	\brief
-	Konstruktor klasy Benchmark pomiarający wykładnik liczby określającej dla jakiej liczby elementów testujemy kontener
+	Konstruktor klasy Benchmark
 	*
-	*\param testPower Liczba określająca wykładnik 10. Cała liczba ( 10^(_testPower) ) określa
-	liczbe elementów, które będą wkładane do kontenerów.
-	*
-	*\param Liczby w tablicy określają jaką ilość danych (jak dużą listę) będziemy kolejno sortować
-	* (w celu pomiaru poptrzebnego czasu dla każdej wielkości)
+	*\param test_list_sizes tablica przechowująca rozmiary list do testów
+	*\param size liczba list równych rozmiarów do przetestowania
+	*\param number_of_memeasurements liczba pomiarów branych do średniej
 	*/
 	Benchmark(unsigned int* test_list_sizes, unsigned int size, unsigned int number_of_memeasurements);
 
+	/**
+	\brief
+	metoda do testowania algorytmu Quick Sort
+	*
+	*\param list lista na której testujemy sortowanie
+	*\param piv jaką motedę wyboru elementu osiowego wybieramy
+	*/
 	void testQuickSort(Lista<T>* list, PIVOT piv);
+
+	/**
+	\brief
+	metoda do testowania algorytmyu Merge Sort
+	*
+	*\param list lista na której testujemy sortowanie
+	*/
+	void testMergeSort(Lista<T>* list);
 
 
 
@@ -108,23 +146,41 @@ void Benchmark<T>::testQuickSort(Lista<T>* list, PIVOT piv) {
 
 	switch(piv) {
 	case FIRST:
-		showResoults("FIRST");
+		showResoultsQuick("FIRST");
 		break;
 	case LAST:
-		showResoults("LAST");
+		showResoultsQuick("LAST");
 		break;
 	case RANDOM:
-		showResoults("RANDOM");
+		showResoultsQuick("RANDOM");
 		break;
 	case CENTER:
-		showResoults("CENTER");
+		showResoultsQuick("CENTER");
 		break;
 	case MEDIAN_OF_THREE:
-		showResoults("MEDIAN_OF_THREE");
+		showResoultsQuick("MEDIAN_OF_THREE");
 		break;
 	}
 
 	}
+
+template <typename T>
+void Benchmark<T>::testMergeSort(Lista<T>* list) {
+	for(int i=0;i<_numberTest;i++) {
+		for(int j=0;j<_numberOfMeasurements;j++) {
+			delete list;
+			list = new Lista<T>();
+			fillList(list, i);
+			_timer.startTimer();
+			merge_sort(list,list->SIZE()+1,1,list->SIZE());
+			_timer.stopTimer();
+			_resoults[i] += (_timer.diffTimeMs())/_numberOfMeasurements;
+		}
+	}
+
+	showResoultsMerge();
+
+}
 
 template <typename T>
 void Benchmark<T>::fillList(Lista<T>* list, int list_size_index) {
@@ -135,8 +191,17 @@ void Benchmark<T>::fillList(Lista<T>* list, int list_size_index) {
 }
 
 template <typename T>
-void Benchmark<T>::showResoults(std::string pivot) {
+void Benchmark<T>::showResoultsQuick(std::string pivot) {
 	std::cout<<"Quick sort,"<<" Pivot: "<<pivot<<" \n";
+	for(int i=0;i<_numberTest;i++) {
+		std::cout<<i+1<<". "<<" N="<<_test_list_sizes[i]<<" "<<_resoults[i]<<" ms \n";
+	}
+	std::cout<<"\n";
+}
+
+template <typename T>
+void Benchmark<T>::showResoultsMerge() {
+	std::cout<<"Merge Sort: \n";
 	for(int i=0;i<_numberTest;i++) {
 		std::cout<<i+1<<". "<<" N="<<_test_list_sizes[i]<<" "<<_resoults[i]<<" ms \n";
 	}

@@ -16,10 +16,26 @@
 
 #define MAX_RANDOM 100000
 
+/**
+\brief
+funkcja do zamiany lelemtów miejscami
+*
+*\param list lista w której zamieniamy elementy
+*\param index_a pozycja pierwszego elementu, którego pozycję zamieniamy z drugim
+*\param index_a pozycja jdrugiego elementu, którego pozycję zamieniamy z pierszym
+*/
 template <class T>
 void swap ( Lista<T>* list, int index_a, int index_b );
 
-
+/**
+\brief
+funkcja do realizacji sortowania Quick Sort
+*
+*\param list lista, którą chcemy posortować
+*\param left skarny lewy element wyznaczający zakres sortowania
+*\param right skrajny prawy element wyznaczjący zakres sortowania
+*\param piv określa jaki element osiowy wybieramy podczas sortowania
+*/
 template <typename T>
 void quick_sort(Lista<T>* list, int left, int right, PIVOT piv);
 

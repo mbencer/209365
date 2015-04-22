@@ -14,10 +14,11 @@ Klasa do przeprowadzenia testów na kontenerach danych.
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_benchmark_a15ccd21b999908da42c58bd5d127c674}{Benchmark} (unsigned int $\ast$test\-\_\-list\-\_\-sizes, unsigned int size, unsigned int number\-\_\-of\-\_\-memeasurements)
-\begin{DoxyCompactList}\small\item\em Konstruktor klasy \hyperlink{class_benchmark}{Benchmark} pomiarający wykładnik liczby określającej dla jakiej liczby elementów testujemy kontener. \end{DoxyCompactList}\item 
-\hypertarget{class_benchmark_ac6a294f9ac4fbba06f0a608eb241d3b0}{void {\bfseries test\-Quick\-Sort} (\hyperlink{class_lista}{Lista}$<$ T $>$ $\ast$list, P\-I\-V\-O\-T piv)}\label{class_benchmark_ac6a294f9ac4fbba06f0a608eb241d3b0}
-
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \hyperlink{class_benchmark}{Benchmark}. \end{DoxyCompactList}\item 
+void \hyperlink{class_benchmark_ac6a294f9ac4fbba06f0a608eb241d3b0}{test\-Quick\-Sort} (\hyperlink{class_lista}{Lista}$<$ T $>$ $\ast$list, P\-I\-V\-O\-T piv)
+\begin{DoxyCompactList}\small\item\em metoda do testowania algorytmu Quick Sort \end{DoxyCompactList}\item 
+void \hyperlink{class_benchmark_a90eb1776343e90f4fcbf3fb95aa52bef}{test\-Merge\-Sort} (\hyperlink{class_lista}{Lista}$<$ T $>$ $\ast$list)
+\begin{DoxyCompactList}\small\item\em metoda do testowania algorytmyu Merge Sort \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
@@ -39,13 +40,53 @@ Klasa odpwiada za pomiar czasu koniecznego do umieszczenia określonej liczby da
 )}}\label{class_benchmark_a15ccd21b999908da42c58bd5d127c674}
 
 
-Konstruktor klasy \hyperlink{class_benchmark}{Benchmark} pomiarający wykładnik liczby określającej dla jakiej liczby elementów testujemy kontener. 
+Konstruktor klasy \hyperlink{class_benchmark}{Benchmark}. 
 
 
 \begin{DoxyParams}{Parametry}
-{\em test\-Power} & Liczba określająca wykładnik 10. Cała liczba ( 10$^\wedge$(\-\_\-test\-Power) ) określa liczbe elementów, które będą wkładane do kontenerów.\\
+{\em test\-\_\-list\-\_\-sizes} & tablica przechowująca rozmiary list do testów \\
 \hline
-{\em Liczby} & w tablicy określają jaką ilość danych (jak dużą listę) będziemy kolejno sortować (w celu pomiaru poptrzebnego czasu dla każdej wielkości) \\
+{\em size} & liczba list równych rozmiarów do przetestowania \\
+\hline
+{\em number\-\_\-of\-\_\-memeasurements} & liczba pomiarów branych do średniej \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_benchmark_a90eb1776343e90f4fcbf3fb95aa52bef}{\index{Benchmark@{Benchmark}!test\-Merge\-Sort@{test\-Merge\-Sort}}
+\index{test\-Merge\-Sort@{test\-Merge\-Sort}!Benchmark@{Benchmark}}
+\subsubsection[{test\-Merge\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Benchmark}$<$ T $>$\-::test\-Merge\-Sort (
+\begin{DoxyParamCaption}
+\item[{{\bf Lista}$<$ T $>$ $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_a90eb1776343e90f4fcbf3fb95aa52bef}
+
+
+metoda do testowania algorytmyu Merge Sort 
+
+
+\begin{DoxyParams}{Parametry}
+{\em list} & lista na której testujemy sortowanie \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_benchmark_ac6a294f9ac4fbba06f0a608eb241d3b0}{\index{Benchmark@{Benchmark}!test\-Quick\-Sort@{test\-Quick\-Sort}}
+\index{test\-Quick\-Sort@{test\-Quick\-Sort}!Benchmark@{Benchmark}}
+\subsubsection[{test\-Quick\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Benchmark}$<$ T $>$\-::test\-Quick\-Sort (
+\begin{DoxyParamCaption}
+\item[{{\bf Lista}$<$ T $>$ $\ast$}]{list, }
+\item[{P\-I\-V\-O\-T}]{piv}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_ac6a294f9ac4fbba06f0a608eb241d3b0}
+
+
+metoda do testowania algorytmu Quick Sort 
+
+
+\begin{DoxyParams}{Parametry}
+{\em list} & lista na której testujemy sortowanie \\
+\hline
+{\em piv} & jaką motedę wyboru elementu osiowego wybieramy \\
 \hline
 \end{DoxyParams}
 

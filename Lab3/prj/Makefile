@@ -11,7 +11,8 @@ INC = \
 	inc/Lista.hh \
 	inc/Benchmark.hh \
 	inc/Pivot.hh \
-	inc/quick_sort.hh
+	inc/quick_sort.hh \
+	inc/merge_sort.hh
 
 
 all: obj main

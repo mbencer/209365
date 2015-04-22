@@ -6,18 +6,18 @@
 \usepackage{graphicx} 
 \usepackage{lmodern}
 \selectlanguage{polish}
-\title{Optymalizacja działania algorytmów sortowania - Quick Sort}
+\title{Optymalizacja działania algorytmów sortowania - Quick Sort oraz Merge Sort}
 \author{Mateusz Bencer, nr: 209360}
 \begin{document}
 \maketitle
-Sprawozdanie zawiera wnioski wyciągnięte z optymalizacji algorytmów sortowania - Quick Sort. Celem pomiarów było sprawdzenie wpływu doboru elementu osiowego (ang. pivot) 
-na czas sortowanie określonej liczby elementów w kontenerze. Na potrzeby tego zadania użyłem implementacji listy z programu Łukasza Saka. Doświadczenie z pracy nad cudzym kodem okazało się bardzo pouczające...
+Sprawozdanie zawiera wnioski wyciągnięte z optymalizacji algorytmów sortowania - Quick Sort (z różnymi wariantami pivota) oraz Merge Sort. Celem pomiarów Quick Sorta było sprawdzenie wpływu doboru elementu osiowego (ang. pivot) 
+na czas sortowanie określonej liczby elementów w kontenerze. Wszystkie pomiary zostały przeprowadzone w 10 próbach, a wyniki zostały uśrednione w celu lepszej dokładności (implementacja w klasie Benchmark). Na potrzeby tego zadania użyłem implementacji listy z programu Łukasza Saka. Doświadczenie z pracy nad cudzym kodem okazało się bardzo pouczające...
 \newline
-W celu możliwości implementacji algorytmu sortowania konieczne były drobne zmiany w kodzie, tj.:
+W celu możliwości implementacji algorytmów sortowania konieczne były drobne zmiany w kodzie, tj.:
 
 \begin{itemize}
   \item Musialem dodać metody set oraz get do klasy lista, ponieważ niemożliwym było zaimplementowanie 
-  algorytmu, gdzie przy pobieraniu elementu został on ściągany, a podczas dodawania inne zostały przesuwane. Metodom pośredniom (sprawdzoną przeze mnie) było pobieranie wszystkich elementów do zwykłej tablicy za pomocą metody pop, posortowanie tej tablicy, i późniesze powrotne dodanie tych 
+  algorytmu, gdzie przy pobieraniu elementu został on ściągany, a podczas dodawania inne zostały przesuwane. Metodą pośredniom (sprawdzoną przeze mnie) było pobieranie wszystkich elementów do zwykłej tablicy za pomocą metody pop, posortowanie tej tablicy, i późniesze powrotne dodanie tych 
   elementów za pomocą metodu push do listy. Jednak jak było to do przewidzenia, miało to bardzo negatywny wpływ na złożoność oraz osiągane rezultaty czasowe. O wiele prostsza byłaby implementacja tego algorytmu na liście powiązanej (linked list), gdzie każdy element zwiera wskaźnik do poprzedniego i następnego elementu, ale na moment kiedy pobrałem kod z gita, była tam tylko implementacja tablicowa.
   \item Musiałem dokonać gruntownych zmian w klasie Benchmark, która była stricte dopoasowana do poprzednionego zadania (mało uniwersalna).
   \item Dodałem zaimplementowaną przez siebie wcześniej klasę Timer do pomiarów czasowych.
@@ -81,4 +81,23 @@ Dla lepszego zoobrazowania otrzymanych wyników umieszczam jeszcze wykres ze wsz
 \label{fig1}
 \end{figure}
 Możemy zaobserwować, że wszystkie metody dają dość podobne rezultaty. Dla liczb losowych najlepsza jednak (według mojej implementacji) wydaję się być metoda mediany z trzech elementów.
+\newline
+\newline
+Merge Sort
+\newline
+Sortowanie algorymem Merge Sort dało zaskakująco dobre wyniki w porównaniu do Quick Sort. Daje to powożne przypuszczenie błędnej implementacji Quick Sort. Mimo wszystko oba algorytmy dają poprawne wyniki (wyświetlają prawidło posortowaną listę). Nie udało mi się dojść do powodu tak dużej różnicy. Teoretyczna złożoność Merge Sort to \begin{math} n*log_{2}n \end{math} czyli taka sama jak dla średniego przypadku Quick Sort. Oto wyniki programu dla Merge Sort:
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.35\textwidth]{merge.png}
+\caption{Wyniki działania programu dla Merge Sort}
+\label{fig1}
+\end{figure}
+\newpage
+Dla zobrazowania i podsumowania wyniki dla Quick Sort i Merge Sort na jednym wykresie:
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{wykres2.png}
+\caption{Wykres przestawiający czasy sortowania dla Quick Sort i Merge Sort}
+\label{fig1}
+\end{figure}
 \end{document}
